@@ -1,7 +1,8 @@
 #!/bin/bash
 
-git submodule update --init --recursive
+git submodule update --init --recursive --remote --merge
+cd CASCExtractor
 mkdir build
 cd build
-cmake ../CASCExtractor
+cmake ..
 make

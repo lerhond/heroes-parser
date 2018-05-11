@@ -1,3 +1,4 @@
 [submodule "CASCExtractor"]
 	path = CASCExtractor
 	url = https://github.com/Kanma/CASCExtractor.git
+    ignore = dirty
