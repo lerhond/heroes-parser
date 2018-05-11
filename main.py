@@ -11,6 +11,7 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from html.parser import HTMLParser
 from itertools import chain
+from PIL import Image
 
 
 CONSTS = {
@@ -31,6 +32,20 @@ def run_extractor(files):
         subprocess.run(
             ['./CASCExtractor/build/bin/CASCExtractor', './hots/', '-f', '-o', './extract/'] + [file],
             stdout=subprocess.DEVNULL)
+
+
+def mkdir(path):
+    try:
+        os.mkdir(path)
+    except FileExistsError:
+        pass
+
+
+def rmdir(path):
+    try:
+        shutil.rmtree(path)
+    except FileNotFoundError:
+        pass
 
 
 def slug(text):
@@ -287,10 +302,7 @@ class TooltipParser(HTMLParser):
 
 
 if __name__ == '__main__':
-    try:
-        shutil.rmtree('./extract/')
-    except FileNotFoundError:
-        pass
+    rmdir('./extract/')
     os.mkdir('./extract/')
     run_extractor([
         'mods/core.stormmod/base.stormdata/BuildId.txt',
@@ -367,9 +379,9 @@ if __name__ == '__main__':
         for talent in talent_nodes:
             face_name = talent_faces[talent.attrib['Talent']]
             icon = icons[face_name]
-            icon_set.add(icon)
             if icon.startswith('Assets\\Textures\\'):
-                icon = icon[len('Assets\\Textures\\'):]
+                icon = icon[len('Assets\\Textures\\'):].lower()
+                icon_set.add(icon)
             else:
                 print('WARNING - unexpected icon path:', icon)
             talent = {
@@ -380,7 +392,7 @@ if __name__ == '__main__':
                 'english_name': game_strings['Button/Name/' + face_name],
                 'unparsed_short_tooltip': game_strings[simple_tooltips.get(face_name) or ('Button/SimpleDisplayText/' + face_name)],
                 'unparsed_full_tooltip': game_strings[tooltips.get(face_name) or ('Button/Tooltip/' + face_name)],
-                'icon': icons[face_name]
+                'icon': icon
             }
             talents.append(talent)
         talents = sorted(talents, key=lambda t: (t['tier'], t['column']))
@@ -406,16 +418,28 @@ if __name__ == '__main__':
         },
         'heroes': heroes,
     }
-    try:
-        os.mkdir('./out/')
-    except FileExistsError:
-        pass
+    mkdir('./out/')
+    rmdir('./out/icons/')
+    mkdir('./out/icons/')
+
     with open('out/heroes_{}.json'.format(build_id), 'w') as f:
         json.dump(data, f, indent=2, sort_keys=True)
 
+    print('Extracting icons')
     run_extractor(['mods/heroes.stormmod/base.stormassets/Assets/Textures/storm_ui_icon_*.dds'])
     for icon in sorted(icon_set):
-        icon_path = ('mods/heroes.stormmod/base.stormassets/' + icon).replace('\\', '/')
-        if not (icon_path.startswith('mods/heroes.stormmod/base.stormassets/Assets/Textures/storm_ui_icon_')
-                and icon_path.endswith('.dds')):
+        icon_path = 'mods/heroes.stormmod/base.stormassets/Assets/Textures/' + icon
+        if not (icon.startswith('storm_ui_icon_') and icon.endswith('.dds')):
             run_extractor([icon_path])
+        shutil.copy('./extract/' + icon_path, './out/icons/')
+
+    print('Converting icons to PNG')
+    subprocess.run(['mogrify',
+                    '-format', 'png',
+                    '-define', 'png:compression-filter=2',
+                    '-define', 'png:compression-level=9',
+                    '-define', 'png:compression-strategy=0',
+                    './*'], cwd='./out/icons/')
+    for file in os.listdir('./out/icons'):
+        if not file.endswith('.png'):
+            os.remove('./out/icons/' + file)
