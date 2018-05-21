@@ -1,0 +1,703 @@
+# Patch notes: 65006 -> 65054
+
+
+## Barbarian
+
+### Battle Rage
+
+Changed plaintext_full_tooltip:
+Activate to instantly restore 10% of Sonya's maximum Health. Stores up to 2 charges. 
+
+Passive: Sonya deals 25% more damage to Mercenaries.
+->
+Activate to instantly restore 10% of Sonya's maximum Health. Stores up to 2 charges. Usable while Whirlwinding.
+
+Passive: Sonya deals 25% more damage to Mercenaries.
+
+
+### Ignore Pain
+
+Changed plaintext_full_tooltip:
+Activate to gain 60 Armor for 4 seconds, taking 60% less damage.
+
+Usable while Whirlwinding.
+->
+Activate to gain 60 Armor for 4 seconds, taking 60% less damage. Usable while Whirlwinding.
+
+
+## Deckard
+
+### Emerald
+
+Changed plaintext_full_tooltip:
+Activate to make the next Horadric Cube reduce healing received by 75% for 4 seconds.
+
+Only 1 Gem may be active at a time.
+->
+Activate to make the next Horadric Cube reduce the healing received of enemy Heroes by 75% for 4 seconds.
+
+Only 1 Gem may be active at a time.
+
+
+## Diablo
+
+### Bulwark
+
+Talent removed (tier 1).
+Increases the duration of Armor granted by Shadow Charge from 2 seconds to 4 seconds.
+
+
+### Life Leech
+
+Changed tier:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+Basic Attacks against enemy Heroes deal bonus damage equal to 1% of the Hero's maximum Health and heal Diablo for the same amount.
+->
+Diablo gains 1 Soul and heals for 1.5% of his maximum Health when Basic Attacking an enemy Hero. While at 100 Souls, increase this healing to 3% of his maximum Health.
+
+Changed plaintext_short_tooltip:
+Basic Attacks against Heroes heal
+->
+Basic Attacks grant Souls and heal
+
+
+### From the Shadows
+
+Talent removed (tier 2).
+Increases the cast range of Shadow Charge by 40%.
+
+
+### Speed Demon
+
+Talent removed (tier 2).
+Being Stunned or Rooted increases Diablo's Movement Speed by 30% for 5 seconds.
+
+
+### Demonic Strength
+
+Talent removed (tier 2).
+Once Overpower's stun expires, the target is slowed by 30% for 3 seconds.
+
+
+### Soul Feast
+
+Talent removed (tier 3).
+Black Soulstone increases Diablo's Health Regeneration by 0.4 per second per Soul.
+
+
+### Soul Shield
+
+Changed tier:
+3
+->
+1
+
+Changed column:
+2
+->
+3
+
+Changed plaintext_full_tooltip:
+Black Soulstone grants Diablo 0.25 Spell Armor per soul, reducing Ability Damage taken by 0.25% per Soul.
+->
+Activate to gain 25 plus 50% of Diablo's current Souls as Spell Armor for 4 seconds.  Every time Diablo damages an enemy Hero, reduce this cooldown by 1 second.
+
+Changed plaintext_short_tooltip:
+Black Soulstone grants Spell Armor
+->
+Activate to gain Spell Armor per Soul
+
+Changed icon:
+storm_ui_icon_diablo_blacksoulstone_var2.dds
+->
+storm_ui_icon_talent_spellshield.dds
+
+
+### Diabolical Momentum
+
+Changed plaintext_full_tooltip:
+Basic Attacks reduce the cooldown of Overpower and Shadow Charge by 1.5 seconds.
+->
+When Diablo's Basic Attacks damage enemies, reduce the cooldown of his Basic Abilities by 0.75 second.
+
+
+### Apocalypse
+
+Changed plaintext_full_tooltip:
+Create a demonic rune under each enemy Hero on the battleground. After 1.75 seconds the rune explodes dealing 137 damage and stunning them for 1.75 seconds.
+->
+Create a demonic rune under each enemy Hero on the battleground. After 1.75 seconds the rune explodes dealing 137 damage and Stunning them for 1.75 seconds.
+
+
+### Lightning Breath
+
+Changed plaintext_full_tooltip:
+Become Unstoppable while channeling lightning that deals 800 damage over 4 seconds.  The direction of the Lightning changes with your mouse cursor position.
+->
+After 0.5 seconds, become Unstoppable and Channel for up to 4 seconds, dealing 50 damage every 0.25 seconds to enemies in front of Diablo. Enemies affected are Slowed by 5% for 2 seconds, up to 50%. 
+
+Lightning Breath's direction changes with your mouse cursor position.
+
+Changed plaintext_short_tooltip:
+Channeled spell that damages enemies
+->
+Damage and Slow enemies in front of Diablo
+
+
+### Devastating Charge
+
+Changed plaintext_full_tooltip:
+Shadow Charge's terrain collision against Heroes deals an additional 5% of the target's maximum life.
+
+Quest: Each time an enemy Hero takes terrain collision damage, increase the maximum life damage by 2%, to a maximum of 10% bonus.
+->
+Increase Shadow Charge's terrain collision damage by 100%.
+
+Quest: Each time an enemy Hero takes terrain collision damage, increase this bonus by 15%, to a maximum of 75%.
+
+
+### Fire Devil
+
+Talent removed (tier 5).
+Fire Stomp increases Diablo's Basic Attack damage by 20% and surrounds Diablo in flames that deal 20 damage every second. Lasts 6 seconds.
+
+
+### Hellfire
+
+Changed plaintext_full_tooltip:
+Each enemy Hero hit by Fire Stomp increases the damage of the next Fire Stomp by 12%, up to 120%.
+->
+Each enemy Hero hit by Fire Stomp grants 2% Spell Power for 10 seconds, up to 30%.
+
+Changed plaintext_short_tooltip:
+Increases Fire Stomp damage
+->
+Fire Stomp grants Spell Power
+
+Changed icon:
+storm_ui_icon_diablo_firestomp_a.dds
+->
+storm_ui_icon_diablo_firestomp.dds
+
+
+### Debilitating Flames
+
+Changed column:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+Enemy Heroes hit by Fire Stomp are slowed by 15% for 2 seconds, up to 30%.
+->
+Enemy Heroes hit by Fire Stomp are Slowed by 5% for 4 seconds, up to 50%. Heroes Slowed by 25% or more by Debilitating Flames deal 50% less damage.
+
+Changed plaintext_short_tooltip:
+Fire Stomp slows enemy Heroes
+->
+Fire Stomp weakens enemy Heroes
+
+
+### Domination
+
+Changed column:
+2
+->
+1
+
+Changed icon:
+storm_ui_icon_diablo_overpower_var1.dds
+->
+storm_ui_icon_diablo_shadowcharge_var1.dds
+
+
+### Fearful Presence
+
+Talent removed (tier 6).
+Activate to reduce the damage dealt by nearby enemy Heroes by 30% for 3 seconds.
+
+Passive: Heroes and Summons that attack Diablo have their Attack Speed slowed by 20% for 2.5 seconds.
+
+
+### Dying Breath
+
+Changed plaintext_full_tooltip:
+Apocalypse's cooldown is reduced by 20 seconds and is cast for free when Diablo dies.
+->
+Apocalypse's cooldown is reduced by 20 seconds for every enemy Hero hit (to a minimum of 5 seconds) and is cast for free when Diablo dies.
+
+
+### Hellstorm
+
+Changed plaintext_full_tooltip:
+Lightning Breath lasts and reaches 50% longer.
+->
+Lightning Breath lasts 200% longer.
+
+Changed plaintext_short_tooltip:
+Lightning Breath lasts and reaches longer
+->
+Lightning Breath lasts longer
+
+
+### Lord of Terror
+
+Changed plaintext_full_tooltip:
+Activate to steal 10% of the maximum Health of nearby enemy Heroes.
+->
+Activate to steal 10% of the maximum Health of nearby enemy Heroes and gain 5 Souls per Hero hit.
+
+Changed plaintext_short_tooltip:
+Steal Health from nearby enemy Heroes
+->
+Steal Health, Souls from nearby enemy Heroes
+
+
+### Feast on Fear
+
+New talent (tier 1).
+Stunning an enemy Hero with Shadow Charge or Overpower heals Diablo for 15% of his maximum Health over 4 seconds.
+
+
+### Sacrificial Soul
+
+New talent (tier 2).
+Stunning a Hero with Shadow Charge grants 5 Souls and 15 Armor for 4 seconds. While at 100 Souls, increase this Armor to 30.
+
+
+### Souls to the Flame
+
+New talent (tier 2).
+Fire Stomp grants 1 Soul every 3 times it damages an enemy Hero, and heals for an additional 1.25% of its damage dealt per Soul.
+
+
+### Eternal Flames
+
+New talent (tier 3).
+When Diablo Stuns an enemy Hero with Shadow Charge or Overpower, reset the cooldown of Fire Stomp.
+
+
+### Malevolence
+
+New talent (tier 3).
+Basic Abilities cause Diablo's next Basic Attack within 6 seconds to deal an additional 100 Spell Damage. Stores up to 2 charges.
+
+
+### Cruelty
+
+New talent (tier 5).
+Stunning an enemy with Shadow Charge or Overpower increases Diablo's Attack Speed by 50% for 5 seconds, up to 100%.
+
+
+### Overpowering Nightmare
+
+New talent (tier 6).
+Gain 2 additional charges of Overpower, with a 2 second cooldown between uses.
+
+
+## Dryad
+
+### Blossom Swell
+
+Changed tier:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+Increases Noxious Blossom's radius by 20%.
+->
+Increases Noxious Blossom's range by 25% and its radius by 20%.
+
+Changed plaintext_short_tooltip:
+Increases Noxious Blossom radius
+->
+Increases Noxious Blossom range and radius
+
+
+### Photosynthesis
+
+Talent removed (tier 1).
+Crippling Spores returns 10 Mana per enemy hit, up to 40 Mana.
+
+
+### Natural Perspective
+
+Changed column:
+3
+->
+2
+
+
+### Cruel Spores
+
+Talent removed (tier 1).
+When Crippling Spores hits only Minions or Mercenaries, its cooldown is reduced by 80% and 20 Mana is restored.
+
+
+### Nimble Wisp
+
+Talent removed (tier 2).
+Increases Wisp Movement Speed by 100% and vision radius by 50%.
+
+
+### Timelost Wisp
+
+Talent removed (tier 2).
+Wisp costs no Mana and its cooldown recharges 125% faster while no Wisp is active.
+
+
+### Skybound Wisp
+
+Talent removed (tier 2).
+Wisp can see over obstacles and reveals the area for 4 seconds after dying.
+
+
+### Dividing Wisp
+
+Talent removed (tier 2).
+The first time a Wisp is relocated, it leaves a copy of itself in the previous location.
+
+
+### Siphoning Toxin
+
+Changed tier:
+3
+->
+2
+
+Changed column:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+As long as Nature's Toxin is active on an enemy, heal 18 Health a second.
+->
+While at least one enemy is afflicted by Nature's Toxin, heal for 9 per second.  When an enemy Hero has 3 stacks of Nature's Toxin, increase this healing by 19 per second.
+
+
+### Wild Vigor
+
+Changed column:
+2
+->
+3
+
+
+### Splintered Spear
+
+Changed column:
+3
+->
+1
+
+Changed plaintext_short_tooltip:
+Noxious Blossom causes Basic Attack to hit 4 targets
+->
+Noxious Blossom makes Basic Attack spread
+
+
+### Nature's Culling
+
+Changed tier:
+3
+->
+2
+
+Changed column:
+4
+->
+3
+
+
+### Leaping Strike
+
+Changed plaintext_full_tooltip:
+Leap over an enemy, slowing them by 80% for 0.35 seconds and dealing 271 damage.
+
+Stores up to 2 charges.
+->
+Leap over an enemy, Slowing them by 80% for 0.35 seconds and dealing 271 damage.
+
+Stores up to 2 charges.
+
+Changed plaintext_short_tooltip:
+Damages and leaps over an enemy
+->
+Leap over enemies, damaging and Slowing
+
+
+### Pestering Blossom
+
+Talent removed (tier 5).
+Increases Noxious Blossom's range by 50%.
+
+
+### Unfair Advantage
+
+Changed tier:
+5
+->
+6
+
+Changed column:
+2
+->
+4
+
+Changed plaintext_full_tooltip:
+Nature's Toxin deals 50% more damage to Heroes that are slowed.
+->
+Nature's Toxin deals 60% more damage to Heroes that are Slowed, Rooted, or Stunned.
+
+Changed plaintext_short_tooltip:
+Increases Nature's Toxin damage to slowed Heroes
+->
+Increases Nature's Toxin damage to disabled Heroes
+
+
+### Giant Killer
+
+Talent removed (tier 5).
+Basic Attacks against enemy Heroes deal bonus damage equal to 1.5% of the Hero's maximum Health.
+
+
+### Greater Spell Shield
+
+Changed column:
+4
+->
+3
+
+
+### Choking Pollen
+
+Changed tier:
+6
+->
+3
+
+Changed column:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+Increases Noxious Blossom damage by 125% against enemies afflicted with Nature's Toxin.
+->
+Noxious Blossom deals 50% more damage to Heroes afflicted by Nature's Toxin, increased to 100% against enemies with 3 stacks.
+
+Changed plaintext_short_tooltip:
+Increases Noxious Blossom damage to enemies with Nature's Toxin
+->
+Nature's Toxin increases Noxious Blossom damage
+
+Changed icon:
+storm_ui_icon_lunara_pollencloud.dds
+->
+storm_ui_icon_lunara_pollencloud_b.dds
+
+
+### Invigorating Spores
+
+Changed plaintext_full_tooltip:
+Using Crippling Spores increases Lunara's Attack Speed by 50% for 6 seconds.
+->
+Crippling Spores grants 30% Attack Speed for 6 seconds.  Basic Attacks against enemy Heroes with 3 stacks of Nature's Toxin deal damage equal to 1.5% of their maximum Health.
+
+Changed plaintext_short_tooltip:
+Crippling Spores increases Basic Attack Speed
+->
+Crippling Spores empowers Basic Attacks
+
+
+### Let Them Wither
+
+Changed tier:
+6
+->
+5
+
+Changed column:
+4
+->
+2
+
+Changed plaintext_full_tooltip:
+Increases Crippling Spores' slow to 50% and causes it to no longer decay.
+->
+Increases Crippling Spores' Slow duration by 1 second and causes it to no longer decay.
+
+Changed plaintext_short_tooltip:
+Increases Crippling Spores slow
+->
+Increase Crippling Spores Slow
+
+
+### Forest's Wrath
+
+Changed plaintext_full_tooltip:
+Increases Thornwood Vine's range by 30%, its speed by 20%, and Lunara's vision radius by 35%.
+->
+Thornwood Vine now applies 2 stacks of Nature's Toxin.  Increase Thornwood Vine's range by 30% and Lunara's vision radius by 35%.
+
+Changed plaintext_short_tooltip:
+Increases Thornwood Vine range and speed
+->
+Thornwood Vine applies Nature's Toxin
+
+
+### Boundless Stride
+
+Changed plaintext_full_tooltip:
+All Leaping Strike charges are returned every 20 seconds. Leaping Strike can be used on allies.
+->
+All Leaping Strike charges are returned every 15 seconds. Leaping Strike can be used on allies.
+
+Changed plaintext_short_tooltip:
+All Leaping Strike charges returned at once, can target allies
+->
+Leaping Strike can target allies
+
+
+### Galloping Gait
+
+Changed column:
+3
+->
+4
+
+
+### Abolish Magic
+
+Changed tier:
+7
+->
+5
+
+Changed plaintext_full_tooltip:
+Target an Ally to remove all damage over time and disabling effects from them and Lunara. For 2 seconds after, the duration of disabling effects is reduced by 50%.
+->
+Target an ally to remove all damage over time and disabling effects from them and Lunara. For 2 seconds after, the duration of disabling effects is reduced by 50%.
+
+Changed plaintext_short_tooltip:
+Remove negative status effects from Lunara and the target
+->
+Remove crowd control from a target and Lunara
+
+
+### Sentinel Wisp
+
+New talent (tier 1).
+After remaining in a bush for 5 seconds, Wisp's vision radius is increased by 200% and reveals the surrounding area.
+
+
+### Hippity Hop
+
+New talent (tier 1).
+After not Basic Attacking or taking damage for 5 seconds, increase the Move Speed bonus of Dryad's Swiftness by 10%.
+
+
+### Endless Spores
+
+New talent (tier 5).
+Casting Crippling Spores while at least 2 Heroes are afflicted by Nature's Toxin reduces the cooldown by 3 seconds.
+
+
+### Accelerated Contamination
+
+New talent (tier 6).
+While at least 2 enemy Heroes are afflicted with Nature's Toxin, Noxious Blossom's cooldown recharges 100% faster.
+
+
+### Intensifying Toxin
+
+New talent (tier 7).
+At 3 stacks, Nature's Toxin deals 40% more damage.
+
+
+## Fenix
+
+### Target Acquired
+
+Changed plaintext_full_tooltip:
+Basic Attacks against Slowed Heroes with Repeater Cannon active grants 10% Movement Speed for 4 seconds, up to 40%.
+->
+Basic Attacks against Slowed Heroes with Repeater Cannon active grant 10% Movement Speed for 4 seconds, up to 40%.
+
+
+## Guldan
+
+### Chaotic Energy
+
+Changed plaintext_full_tooltip:
+Increases the cast range of Drain Life by 25%.
+
+Quest: The healing provided by Regen Globes is increased by 50%.
+
+Reward: After Gathering 20 Regen Globes Gul'dan's Basic Ability Mana costs are permanently reduced by 20.
+->
+Increases the cast range of Drain Life by 25%.
+
+Quest: The healing provided by Regen Globes is increased by 50%.
+
+Reward: After gathering 20 Regen Globes Gul'dan's Basic Ability Mana costs are permanently reduced by 20.
+
+
+### Health Funnel
+
+Changed plaintext_short_tooltip:
+Reduced cooldown
+->
+Reduces Drain Life's cooldown
+
+
+## Kaelthas
+
+### Ignite
+
+Changed tree_name:
+Kael'thasLivingBombIgnite
+->
+KaelthasLivingBombIgnite
+
+Changed face_name:
+Kael'thasLivingBombIgnite
+->
+KaelthasLivingBombIgnite
+
+
+## Necromancer
+
+### Mortal Wound
+
+Changed plaintext_full_tooltip:
+Enemies hit by Spectral Scythe receive 75% less healing for 4 seconds.
+->
+Enemy Heroes hit by Spectral Scythe receive 75% less healing for 4 seconds.
+
+
+## Tassadar
+
+### Khala's Light
+
+Changed plaintext_full_tooltip:
+Upon expiration or breaking, the target of Plasma Shield gains 15 Armor for 3 seconds, causing them to take 15% less damage.
+->
+Plasma Shield grants Heroes 15 Armor for 3 seconds upon breaking or expiring, causing them to take 15% less damage.
+
+
+## Tychus
+
+### The Bigger They Are...
+
+Changed plaintext_full_tooltip:
+Lower the cooldown of Minigun by 2 seconds and increase the damage bonus to 4% while enemy Heroes are above 35% Health, but Minigun no longer has any effect on targets below 35%.
+->
+Lower the cooldown of Minigun by 2 seconds. Increase the damage bonus to 4% while enemy Heroes are above 35% Health, but Minigun no longer has any effect on targets below 35%.
+

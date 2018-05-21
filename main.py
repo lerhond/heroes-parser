@@ -25,12 +25,14 @@ CONSTS = {
 
 MATH_SYMBOLS = ['+', '-', '/', '*', '(', ')']
 
+path_to_hots = None
+
 
 def run_extractor(files):
     for file in files:
         print('Extracting', file)
         subprocess.run(
-            ['./CASCExtractor/build/bin/CASCExtractor', './hots/', '-f', '-o', './extract/'] + [file],
+            ['./CASCExtractor/build/bin/CASCExtractor', path_to_hots, '-f', '-o', './extract/'] + [file],
             stdout=subprocess.DEVNULL)
 
 
@@ -277,7 +279,6 @@ class TooltipParser(HTMLParser):
                     math_exp = '(' * (closed_count - open_count) + math_exp
                 elif open_count > closed_count:
                     math_exp += ')' * (open_count - closed_count)
-                # print(math_exp)
                 res = calculate_math(math_exp)
                 if isinstance(res, float):
                     res = round(res, int(attrs.get('precision', 0)))
@@ -302,16 +303,29 @@ class TooltipParser(HTMLParser):
 
 
 if __name__ == '__main__':
-    rmdir('./extract/')
-    os.mkdir('./extract/')
-    run_extractor([
-        'mods/core.stormmod/base.stormdata/BuildId.txt',
-        'mods/core.stormmod/base.stormdata/GameData/*.xml',
-        'mods/heroesdata.stormmod/base.stormdata/*.xml',
-        'mods/heroesdata.stormmod/enus.stormdata/*',
-        'mods/heromods/*.xml',
-        'mods/heromods/*.txt'
-    ])
+    args = sys.argv[1:]
+    if len(args) != 1:
+        print('You need to provide a path to a Heroes of the Storm installation, or --skip-extracting.\n'
+              'When using --skip-extracting, provide extracted files in ./extract/.')
+        sys.exit(1)
+    if '--skip-extracting' != args[0] and not os.path.isdir(args[0]):
+        print('{} is not a directory.'.format(args[0]))
+        sys.exit(1)
+    skip_extracting = '--skip-extracting' == args[0]
+    if not skip_extracting:
+        path_to_hots = args[0]
+
+    if not skip_extracting:
+        rmdir('./extract/')
+        os.mkdir('./extract/')
+        run_extractor([
+            'mods/core.stormmod/base.stormdata/BuildId.txt',
+            'mods/core.stormmod/base.stormdata/GameData/*.xml',
+            'mods/heroesdata.stormmod/base.stormdata/*.xml',
+            'mods/heroesdata.stormmod/enus.stormdata/*',
+            'mods/heromods/*.xml',
+            'mods/heromods/*.txt'
+        ])
 
     with open('./extract/mods/core.stormmod/base.stormdata/BuildId.txt') as f:
         build_id = f.read()
@@ -371,10 +385,7 @@ if __name__ == '__main__':
         talent_nodes = get_children(hero, lambda el: el.tag == 'TalentTreeArray')
         if not talent_nodes:
             continue
-        if len(sys.argv) > 1 and hero.attrib['id'] != sys.argv[1]:
-            continue
         print(hero.attrib['id'])
-        # print('---', hero.attrib['id'], file=sys.stderr)
         talents = []
         for talent in talent_nodes:
             face_name = talent_faces[talent.attrib['Talent']]
@@ -397,19 +408,18 @@ if __name__ == '__main__':
             talents.append(talent)
         talents = sorted(talents, key=lambda t: (t['tier'], t['column']))
         for talent in talents:
-            # print('* {}:'.format(talent['english_name']), file=sys.stderr)
             parser = TooltipParser()
             parser.feed(talent['unparsed_short_tooltip'])
             del talent['unparsed_short_tooltip']
-            talent['plaintext_short_tooltip'] = parser.plaintext_tooltip
-            talent['html_short_tooltip'] = parser.html_tooltip
+            talent['plaintext_short_tooltip'] = parser.plaintext_tooltip.strip()
+            talent['html_short_tooltip'] = parser.html_tooltip.strip()
             parser = TooltipParser()
             parser.feed(talent['unparsed_full_tooltip'])
             del talent['unparsed_full_tooltip']
-            talent['plaintext_full_tooltip'] = parser.plaintext_tooltip
-            talent['html_full_tooltip'] = parser.html_tooltip
-            # print(talent['plaintext_full_tooltip'], file=sys.stderr)
-        heroes[hero.attrib['id']] = talents
+            talent['plaintext_full_tooltip'] = parser.plaintext_tooltip.strip()
+            talent['html_full_tooltip'] = parser.html_tooltip.strip()
+        heroes[hero.attrib['id']] = {}
+        heroes[hero.attrib['id']]['talents'] = talents
 
     print('Saving JSON')
     data = {
@@ -425,8 +435,9 @@ if __name__ == '__main__':
     with open('out/heroes_{}.json'.format(build_id), 'w') as f:
         json.dump(data, f, indent=2, sort_keys=True)
 
-    print('Extracting icons')
-    run_extractor(['mods/heroes.stormmod/base.stormassets/Assets/Textures/storm_ui_icon_*.dds'])
+    if not skip_extracting:
+        print('Extracting icons')
+        run_extractor(['mods/heroes.stormmod/base.stormassets/Assets/Textures/storm_ui_icon_*.dds'])
     for icon in sorted(icon_set):
         icon_path = 'mods/heroes.stormmod/base.stormassets/Assets/Textures/' + icon
         if not (icon.startswith('storm_ui_icon_') and icon.endswith('.dds')):
