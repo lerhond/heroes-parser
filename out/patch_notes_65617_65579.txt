@@ -1,0 +1,182 @@
+# Patch notes: 65617 -> 65579
+
+
+## Artanis
+
+### Templar's Zeal
+
+Changed icon:
+storm_ui_icon_artanis_powerstrikes_var1.dds
+->
+storm_ui_icon_artanis_powerstrikes.dds
+
+
+## Chen
+
+### Accumulating Flame
+
+Changed plaintext_full_tooltip:
+Quest: Every time a Hero is Ignited with Breath of Fire, increase its damage over time by 2%, up to 60%.
+
+Reward: After Igniting 30 Heroes, each enemy Hero Ignited grants you 15 Armor for 3 seconds.
+->
+Quest: Every time a Hero is Ignited with Breath of Fire, increase its damage over time by 2%, up to 60%.
+
+Reward: After Igniting 30 Heroes, gain 25 Armor for 1 second per Hero Ignited, reducing damage taken by 25%.
+
+
+### Purifying Brew
+
+Changed plaintext_full_tooltip:
+The next Stun or Silence used against Chen has its duration reduced by 75% and resets the cooldown of Fortifying Brew. Can only trigger once every 15 seconds. While Chen has Fortifying Brew Shields, he gains 30 Spell Armor, reducing Ability Damage taken by 30%.
+->
+The next Stun or Silence used against Chen has its duration reduced by 75% and resets the cooldown of Fortifying Brew. Can only trigger once every 15 seconds. While channeling Fortifying Brew gain 30 Spell Armor, reducing Ability Damage taken by 30%.
+
+
+## Deckard
+
+### Ancient Blessings
+
+Changed plaintext_full_tooltip:
+Activate Fortitude of the Faithful to empower nearby allied Hero Basic Attacks for 8 seconds, causing them to deal an additional 72 damage in an area and heal for 106 for each Hero hit.
+->
+Activate Fortitude of the Faithful to empower nearby allied Hero Basic Attacks for 8 seconds, causing them to deal an additional 72 damage in an area and heal for 106 for each Hero hit. This effect can only occur once per second.
+
+
+## Diablo
+
+### Cruelty
+
+Changed plaintext_full_tooltip:
+Stunning an enemy with Shadow Charge or Overpower increases Diablo's Attack Speed by 50% for 5 seconds, up to 100%.
+->
+Stunning an enemy Hero with Shadow Charge or Overpower increases Diablo's Attack Speed by 50% for 5 seconds, up to 100%.
+
+
+## Gall
+
+### Double Back
+
+Changed icon:
+storm_ui_icon_gall_chaoscollision_var1.dds
+->
+storm_ui_icon_gall_chaoscollision.dds
+
+
+## Garrosh
+
+### Warbreaker
+
+Changed plaintext_full_tooltip:
+Quest: Stun Heroes with Groundbreaker.
+
+Reward: After Stunning 5 Heroes, Groundbreaker deals an additional 165 damage over 3 seconds to Heroes.
+
+Reward: After Stunning 15 Heroes, permanently reduce Groundbreaker's cooldown by 2 seconds.
+->
+Quest: Stun Heroes with Groundbreaker.
+
+Reward: After Stunning 5 Heroes, Groundbreaker's Stun deals an additional 165 damage over 3 seconds to Heroes.
+
+Reward: After Stunning 15 Heroes, permanently reduce Groundbreaker's cooldown by 2 seconds.
+
+
+## Genji
+
+### The Dragon Becomes Me
+
+Changed plaintext_full_tooltip:
+Each time Dragonblade hits an enemy Hero, the duration of Dragonblade is increased by 0.5 seconds. If an Hero is killed within 2 seconds of being hit by Dragonblade, Swift Strike's cooldown is reset.
+->
+Each time Dragonblade hits an enemy Hero, the duration of Dragonblade is increased by 0.5 seconds. If a Hero is killed within 2 seconds of being hit by Dragonblade, Swift Strike's cooldown is reset.
+
+
+## Guldan
+
+### Curse of Exhaustion
+
+Changed icon:
+storm_ui_icon_guldan_handofguldan.dds
+->
+storm_ui_icon_guldan_healthfunnel.dds
+
+
+## Leoric
+
+### Consume Vitality
+
+Changed icon:
+storm_ui_icon_leoric_skeletalswing_var1.dds
+->
+storm_ui_icon_leoric_skeletalswing.dds
+
+
+## Malfurion
+
+### Celestial Alignment
+
+Changed plaintext_full_tooltip:
+Increase Moonfire's reveal duration by 1 second. Malfurion's Basic Attacks against Heroes revealed by Moonfire deal 75% more damage.
+->
+Increase Moonfire's reveal duration by 3 seconds. Malfurion's Basic Attacks against Heroes revealed by Moonfire deal 75% more damage.
+
+
+## Medivh
+
+### Mystic Assault
+
+Changed icon:
+storm_ui_icon_medivh_arcanemissile_a.dds
+->
+storm_ui_icon_medivh_arcanemissile.dds
+
+
+## Tassadar
+
+### Psi-Infusion
+
+Changed icon:
+storm_ui_icon_tassadar_psionicstorm_var1.dds
+->
+storm_ui_icon_tassadar_psionicstorm.dds
+
+
+## Varian
+
+### Colossus Smash
+
+Changed plaintext_full_tooltip:
+Smash a target enemy, dealing 160 damage and lowering their Armor by 20 for 3 seconds, causing them to take 20% increased damage.
+
+Passive: Base Attack Damage increased by 100%.
+Passive: Maximum Health reduced by 10%.
+->
+Smash a target enemy, dealing 160 damage and lowering their Armor by 20 for 3 seconds, causing them to take 20% increased damage.
+
+Passive: Base Attack Damage increased by 100%.
+Passive: Maximum Health and Health Regeneration reduced by 10%.
+
+
+## Wizard
+
+### Disintegrate
+
+Changed plaintext_full_tooltip:
+Channel a powerful beam, dealing 440 damage over 2.5 seconds to enemies while they are in it. The direction of the beam changes with your mouse cursor position.
+->
+Channel a powerful beam, dealing 440 damage over 2.6 seconds to enemies while they are in it. The direction of the beam changes with your mouse cursor position.
+
+
+## Zeratul
+
+### Shadow Hunter
+
+Changed plaintext_full_tooltip:
+Quest: Gather Regeneration Globes to lower the Mana cost of Blink by 3.
+
+Reward: Upon gathering 15 Regeneration Globes, Basic Attacks reduce the cooldown of Blink by 1 second.
+->
+Quest: Gather Regeneration Globes to lower the Mana cost of Blink by 3, up to 45.
+
+Reward: Upon gathering 15 Regeneration Globes, Basic Attacks reduce the cooldown of Blink by 1 second.
+

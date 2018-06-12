@@ -1,0 +1,14 @@
+# Patch notes: 65579 -> 65751
+
+
+## Varian
+
+### Taunt
+
+Changed plaintext_short_tooltip:
+Gain Health, Armor
+Force a Hero to attack Varian
+->
+Gain Health
+Force a Hero to attack Varian
+

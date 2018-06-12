@@ -21,6 +21,8 @@ CONSTS = {
     'Behavior,GreymaneHuntersBlunderbussCarryBehavior,DamageResponse.ModifyFraction': 1,
     # Greymane - Tooth and Claw
     'Behavior,ToothAndClawCarryBehavior,DamageResponse.ModifyFraction': 1,
+    # Yrel - Word of Glory
+    'Effect,YrelArdentDefenderWordOfGloryCreateHealer,MultiplicativeModifierArray[WordOfGlory].Modifier': 0,
 }
 
 MATH_SYMBOLS = ['+', '-', '/', '*', '(', ')']

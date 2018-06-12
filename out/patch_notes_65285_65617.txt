@@ -1,0 +1,191 @@
+# Patch notes: 65285 -> 65617
+
+
+## Arthas
+
+### Rime
+
+Changed plaintext_full_tooltip:
+Every 5 seconds, gain 60 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 60%. Stores up to 3 charges.
+->
+Every 5 seconds, gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%. Stores up to 3 charges.
+
+
+## Crusader
+
+### Reinforce
+
+Changed plaintext_full_tooltip:
+Using a Basic Ability grants 50 Physical Armor against the next enemy Hero Basic Attack, reducing damage taken by 50%.
+
+Stores up to 2 charges.
+->
+Using a Basic Ability grants 75 Physical Armor against the next enemy Hero Basic Attack, reducing damage taken by 75%.
+
+Stores up to 2 charges.
+
+
+## Diablo
+
+### Sacrificial Soul
+
+Changed plaintext_full_tooltip:
+Stunning a Hero with Shadow Charge grants 5 Souls and 15 Armor for 4 seconds. While at 100 Souls, increase this Armor to 30.
+->
+Stunning a Hero with Shadow Charge grants 5 Souls and 20 Armor for 4 seconds. While at 100 Souls, increase this Armor to 40.
+
+
+### Devil's Due
+
+Changed plaintext_full_tooltip:
+Black Soulstone increases the effects of Regen Globes and Healing Fountains by 2% per Soul.
+->
+Black Soulstone increases the effects of Regen Globes and Healing Fountains by 2.25% per Soul.
+
+
+### Feast on Fear
+
+Changed plaintext_full_tooltip:
+Stunning an enemy Hero with Shadow Charge or Overpower heals Diablo for 15% of his maximum Health over 4 seconds.
+->
+Stunning an enemy Hero with Shadow Charge or Overpower heals Diablo for 12% of his maximum Health over 3 seconds.
+
+
+### Souls to the Flame
+
+Changed plaintext_full_tooltip:
+Fire Stomp grants 1 Soul every 3 times it damages an enemy Hero, and heals for an additional 1.25% of its damage dealt per Soul.
+->
+Fire Stomp grants 1 Soul every 3 times it damages an enemy Hero, and heals for an additional 1.3% of its damage dealt per Soul.
+
+
+### Devastating Charge
+
+Changed plaintext_full_tooltip:
+Increase Shadow Charge's terrain collision damage by 100%.
+
+Quest: Each time an enemy Hero takes terrain collision damage, increase this bonus by 15%, to a maximum of 75%.
+->
+Increase Shadow Charge's terrain collision damage by 80%.
+
+Quest: Each time an enemy Hero takes terrain collision damage, increase this bonus by 20%, to a maximum of 120%.
+
+
+## Dryad
+
+### Choking Pollen
+
+Changed plaintext_full_tooltip:
+Noxious Blossom deals 50% more damage to Heroes afflicted by Nature's Toxin, increased to 100% against enemies with 3 stacks.
+->
+Noxious Blossom deals 75% more damage to Heroes afflicted by Nature's Toxin, increased to 125% against enemies with 3 stacks.
+
+
+### Nature's Culling
+
+Changed plaintext_full_tooltip:
+Increases Nature's Toxin's damage by 150% to non-Heroes.
+->
+Increases Nature's Toxin's damage by 125% to non-Heroes.
+
+
+## FaerieDragon
+
+### Blink Heal
+
+Changed plaintext_full_tooltip:
+Teleport to a nearby ally, healing them for 194.
+
+Stores up to 2 charges.
+->
+Teleport to a nearby ally, healing them for 200.
+
+Stores up to 2 charges.
+
+
+## Garrosh
+
+### Mortal Combo
+
+Changed plaintext_full_tooltip:
+If Wrecking Ball is used on a Hero within 3 seconds of Stunning them with Groundbreaker, Wrecking Ball's cooldown is reduced by 7 seconds.
+->
+If Wrecking Ball is used on a Hero within 3 seconds of Stunning them with Groundbreaker, Wrecking Ball's cooldown is reduced by 9 seconds.
+
+
+## Genji
+
+### Agile Dismount
+
+Changed plaintext_full_tooltip:
+While mounted, the range of Cyber Agility is increased by 70% and its cooldown is reduced by 7 seconds.
+->
+While mounted, the range of Cyber Agility is increased by 70% and its cooldown is reduced by 10 seconds.
+
+
+## Thrall
+
+### Feral Resilience
+
+Changed plaintext_full_tooltip:
+Heroes damaged by Feral Spirit grant 3 stacks of Frostwolf Resilience and 2 stacks of Feral Resilience, granting 50 Physical Armor against the next incoming Hero Basic Attack.
+
+Stacks are consumed on the next cast of Feral Spirit.
+->
+Heroes damaged by Feral Spirit grant 3 stacks of Frostwolf Resilience and 2 stacks of Feral Resilience, granting 75 Physical Armor against the next incoming Hero Basic Attack.
+
+Stacks are consumed on the next cast of Feral Spirit.
+
+
+## Varian
+
+### Taunt
+
+Changed plaintext_full_tooltip:
+Silence a target Hero and force them to attack Varian for 1.25 seconds.
+
+Passive: Maximum Health and Health Regeneration increased by 25%.
+Passive: Gain 15 Armor.
+->
+Silence a target Hero and force them to attack Varian for 1.25 seconds.
+
+Passive: Maximum Health and Health Regeneration increased by 30%.
+
+
+## Zagara
+
+### Corrosive Saliva
+
+Changed plaintext_full_tooltip:
+When used against Heroes, Hunter Killers deal additional damage equal to 2% of their maximum Health.
+->
+When used against Heroes, Hunter Killers deal additional damage equal to 2.5% of their maximum Health.
+
+
+### Devouring Maw
+
+Changed plaintext_full_tooltip:
+Summon a Devouring Maw that devours enemies for 4 seconds. Devoured enemies cannot fight and take 80 damage per second.
+
+Usable on Unstoppable enemies.
+->
+Summon a Devouring Maw that devours enemies for 4 seconds. Devoured enemies cannot fight and take 88 damage per second.
+
+Usable on Unstoppable enemies.
+
+
+### Corpse Feeders
+
+Changed plaintext_full_tooltip:
+Reduces the cooldown of Infested Drop by 3 seconds and Roachlings take 40% less damage from non-Heroic sources.
+->
+Reduces the cooldown of Infested Drop by 3 seconds and Roachlings take 50% less damage from non-Heroic sources.
+
+
+### Brood Expansion
+
+Changed plaintext_full_tooltip:
+Reduces the cooldown of Hunter Killer by 6 seconds.
+->
+Reduces the cooldown of Hunter Killer by 7 seconds and its Mana cost by 30.
+
