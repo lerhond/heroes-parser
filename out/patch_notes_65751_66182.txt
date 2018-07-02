@@ -1,0 +1,437 @@
+# Patch notes: 65751 -> 66182
+
+
+## Amazon
+
+### Impale
+
+Changed plaintext_full_tooltip:
+Enemies below 50% Health take 50% increased damage from Fend.
+->
+Enemies below 60% Health take 50% increased damage from Fend.
+
+
+### Seraph's Hymn
+
+Changed plaintext_full_tooltip:
+Reduce Blinding Light's Mana cost from 70 to 40. Basic Attacks against Blinded enemies reduce the cooldown of Blinding Light by 2 seconds.
+->
+Reduce the cooldown and Mana cost of Blinding Light by 33%. Basic Attacks against Blinded enemies deal 100% more damage.
+
+Changed plaintext_short_tooltip:
+Basic Attacks reduce Blinding Light cooldown
+->
+Empower Blinding Light, Basic Attacks
+
+
+## Anubarak
+
+### Nullification Shield
+
+Talent removed (tier 7).
+Activate to gain 60 Spell Armor for 5 seconds.
+
+
+### Hardened Shield
+
+New talent (tier 7).
+Activate to gain 75 Armor for 4 seconds, taking 75% less damage.
+
+
+## Crusader
+
+### Eternal Retaliation
+
+Changed plaintext_full_tooltip:
+Condemn's cooldown is lowered by 0.5 seconds for each enemy affected. Maximum of 10 targets.
+->
+Lower the cooldown of Condemn by 0.5 seconds and refund 2.5 Mana for every enemy hit. Maximum of 10 targets.
+
+Changed plaintext_short_tooltip:
+Condemn cooldown reduced per enemy hit
+->
+Empower Condemn
+
+
+## Deckard
+
+### Morenados!
+
+Changed plaintext_full_tooltip:
+Lorenado's cooldown is reduced by 5 seconds every time an enemy Hero is knocked back. This effect can only occur once per 0.5 seconds.
+->
+Lorenado's cooldown is reduced by 6 seconds every time an enemy Hero is knocked back. This effect can only occur once per 0.5 seconds.
+
+
+## Diablo
+
+### Cruelty
+
+Changed plaintext_full_tooltip:
+Stunning an enemy Hero with Shadow Charge or Overpower increases Diablo's Attack Speed by 50% for 5 seconds, up to 100%.
+->
+Stunning an enemy Hero with Shadow Charge or Overpower increases Diablo's Attack Speed by 50% for 7 seconds, up to 100%.
+
+
+### Dying Breath
+
+Changed plaintext_full_tooltip:
+Apocalypse's cooldown is reduced by 20 seconds for every enemy Hero hit (to a minimum of 5 seconds) and is cast for free when Diablo dies.
+->
+Apocalypse's cooldown is reduced by 25 seconds for every enemy Hero hit (to a minimum of 5 seconds) and is cast for free when Diablo dies.
+
+
+## Fenix
+
+### Planet Cracker
+
+Changed plaintext_full_tooltip:
+After 0.5 seconds, Channel a powerful beam that spans across the battleground for 4 seconds, dealing 108 damage every 0.25 seconds to non-Structure enemies hit.
+->
+After 0.5 seconds, Channel a powerful beam that spans across the battleground for 4 seconds, dealing 112 damage every 0.25 seconds to non-Structure enemies hit.
+
+
+### Combat Advantage
+
+Changed plaintext_full_tooltip:
+Plasma Cutter deals 40% more damage to Slowed targets.
+->
+Plasma Cutter deals 35% more damage to Slowed targets.
+
+
+### Adanium Shell
+
+Changed plaintext_full_tooltip:
+After arriving with Warp, gain 40 Armor for 4 seconds.
+->
+After arriving with Warp, gain 50 Armor for 4 seconds.
+
+
+### Auxiliary Shields
+
+Changed plaintext_full_tooltip:
+Permanently reduce Fenix's maximum Health by 10% but increase Shield Capacitor's Shield by 20%. Basic Attacks regenerate Shields equal to 15% of the damage dealt.
+->
+Permanently reduce Fenix's maximum Health by 10% but increase Shield Capacitor's Shield by 20%. Basic Attacks regenerate Shields equal to 10% of the damage dealt.
+
+
+### Warp Warfare
+
+Changed plaintext_full_tooltip:
+After arriving with Warp, gain 125% Attack Speed for 4 seconds while in Repeater Cannon mode.
+->
+After arriving with Warp, gain 175% Attack Speed for 4 seconds while in Repeater Cannon mode.
+
+
+### Rapid Recharge
+
+Changed plaintext_full_tooltip:
+Whenever Fenix is healed, Shield Capacitor's Shield recharges for 40% of the healing received.
+->
+Whenever Fenix is healed, Shield Capacitor's Shield recharges for 60% of the healing received.
+
+
+## Firebat
+
+### Combustion
+
+Changed plaintext_full_tooltip:
+Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 48 damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds.
+
+Blaze's Movement Speed is reduced by 50% while Channeling.
+->
+Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 52 damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds.
+
+Blaze's Movement Speed is reduced by 50% while Channeling.
+
+
+### Feeding the Flame
+
+Changed plaintext_full_tooltip:
+Each enemy Hero hit by Flame Stream reduces the cooldown of Oil Spill by 2 seconds.
+->
+Each enemy Hero hit by Flame Stream reduces the cooldown of Oil Spill by 2.5 seconds.
+
+
+## Greymane
+
+### Visceral Attacks
+
+Talent removed (tier 5).
+Worgen Basic Attacks reduce Razor Swipe's cooldown by 1.5 seconds.
+
+
+### Perfect Aim
+
+Changed plaintext_full_tooltip:
+Increases Gilnean Cocktail's range by 30% and refunds 35 Mana if it hits an enemy Hero.
+->
+Increases Gilnean Cocktail's range by 30% and refunds 45 Mana if it hits an enemy Hero.
+
+
+### Unfettered Assault
+
+Changed column:
+4
+->
+2
+
+Changed plaintext_full_tooltip:
+Increases Razor Swipe's lunge distance by 60%.
+->
+Increases Razor Swipe's lunge distance by 60%, and Worgen Basic Attacks reduce Razor Swipe's cooldown by 1.5 seconds.
+
+Changed plaintext_short_tooltip:
+Increases Razor Swipe range
+->
+Increases Razor Swipe range, reduces cooldown
+
+Changed icon:
+storm_ui_icon_greymane_swipe_var1.dds
+->
+storm_ui_icon_greymane_swipe.dds
+
+
+## Maiev
+
+### Shadow Armor
+
+Changed plaintext_full_tooltip:
+Blink grants 20 Armor for 2.5 seconds. Maiev's Basic Attacks against enemy Heroes refresh this duration.
+->
+Blink grants 20 Armor for 3 seconds. Maiev's Basic Attacks against enemy Heroes refresh this duration.
+
+
+### Vengeful Knives
+
+Changed plaintext_full_tooltip:
+For each enemy Hero Spirit of Vengeance hits, Maiev's next Fan of Knives deals 1.2% maximum Health as bonus damage to enemy Heroes.
+->
+For each enemy Hero Spirit of Vengeance hits, Maiev's next Fan of Knives deals 1.5% maximum Health as bonus damage to enemy Heroes.
+
+
+### Cruel Chain
+
+Changed plaintext_full_tooltip:
+Umbral Bind grants 25% Movement Speed for 2.5 seconds. In addition, each time Maiev deals damage to tethered targets, Umbral Bind's pull damage to all targets is increased by 40%, up to 200%.
+->
+Umbral Bind grants 25% Movement Speed for 2.5 seconds. In addition, each time Maiev deals damage to tethered targets, Umbral Bind's pull damage to all targets is increased by 30%, up to 150%.
+
+
+### Pursuit of Vengeance
+
+Changed plaintext_full_tooltip:
+Each Hero tethered by Umbral Bind reduces the cooldown of Spirit of Vengeance by 1.5 seconds.
+->
+Each Hero tethered by Umbral Bind reduces the cooldown of Spirit of Vengeance by 2.5 seconds.
+
+
+### Warden's Cage
+
+Changed plaintext_full_tooltip:
+Summon 8 Warden Avatars as a cage around Maiev. After 1.5 seconds, enemy Heroes that come in contact with an Avatar consume it and are knocked to the center of the cage. Warden Avatars last 7 seconds.
+->
+Summon 8 Warden Avatars as a cage around Maiev. After 1.5 seconds, enemy Heroes that come in contact with an Avatar consume it and are knocked to the center of the cage. Warden Avatars last 5 seconds.
+
+
+## Probius
+
+### Probius Loop
+
+Changed plaintext_full_tooltip:
+Whenever a Rift explosion hits 2 or more enemy Heroes, create a new Warp Rift in the same location.
+->
+Whenever a Rift explosion hits 1 or more enemy Heroes, create a new Warp Rift in the same location.
+
+
+## Rehgar
+
+### Farsight
+
+Changed plaintext_full_tooltip:
+Activate to reveal an area for 10 seconds. Enemies in the area are revealed for 4 seconds.
+->
+Activate to reveal an area for 5 seconds. Enemies in the area are revealed for 3 seconds.
+
+
+### Rising Storm
+
+Changed plaintext_full_tooltip:
+Every time Lighting Shield damages an enemy Hero, increase that Lightning Shield's damage by 10%. Stacks up to 20 times.
+->
+Every time Lighting Shield damages an enemy Hero, increase that Lightning Shield's damage by 15%. Stacks up to 15 times.
+
+
+### Ancestral Healing
+
+Changed plaintext_full_tooltip:
+After 1 second, heal an allied Hero for 1475 Health.
+
+Cannot be used on Rehgar.
+->
+After 1 second, heal an allied Hero for 1180 Health.
+
+Cannot be used on Rehgar.
+
+
+### Earthliving Enchant
+
+Changed plaintext_full_tooltip:
+When Chain Heal heals a Hero below 50% Health, they are healed an additional 200 Health over 5 seconds.
+->
+When Chain Heal heals a Hero below 50% Health, they are healed an additional 225 Health over 5 seconds.
+
+
+### Spiritwalker's Grace
+
+Changed plaintext_full_tooltip:
+Reduces Chain Heal's Mana cost from 65 to 45.
+->
+Reduces Chain Heal's Mana cost from 55 to 40.
+
+
+### Farseer's Blessing
+
+Changed plaintext_full_tooltip:
+Increases healing amount by 50%. Allies near the target are healed for 50% of the amount of health regained.
+->
+Increases healing amount by 75%. Allies near the target are healed for 75% of the amount of Health regained.
+
+
+### Tidal Waves
+
+Changed plaintext_full_tooltip:
+Reduces Chain Heal's cooldown by 1 second for each Hero healed.
+->
+Reduces Chain Heal's cooldown by 0.75 seconds for each Hero healed.
+
+
+### Stormcaller
+
+Changed plaintext_full_tooltip:
+When Lightning Shield damages an enemy it restores 4 Mana, up to 40.
+->
+When Lightning Shield damages an enemy it restores 4 Mana, up to 100.
+
+
+## Thrall
+
+### Feral Resilience
+
+Changed plaintext_full_tooltip:
+Heroes damaged by Feral Spirit grant 3 stacks of Frostwolf Resilience and 2 stacks of Feral Resilience, granting 75 Physical Armor against the next incoming Hero Basic Attack.
+
+Stacks are consumed on the next cast of Feral Spirit.
+->
+Heroes damaged by Feral Spirit grant 3 stacks of Frostwolf Resilience and 2 stacks of Feral Resilience, granting 50 Physical Armor against the next incoming Hero Basic Attack.
+
+Stacks are consumed on the next cast of Feral Spirit.
+
+
+## Tracer
+
+### Focus Fire
+
+Changed plaintext_full_tooltip:
+If an entire ammo magazine is unloaded on an enemy, the last bullet will deal 98 bonus damage.  This is equal to 35% of the total magazine.
+->
+If an entire ammo magazine is unloaded on an enemy, the last bullet will deal 98 bonus damage.  This is equal to 36% of the total magazine.
+
+
+## WitchDoctor
+
+### Gargantuan
+
+Changed plaintext_full_tooltip:
+Summon a Gargantuan to guard an area for 20 seconds. Deals 100 damage when summoned, attacks for 150 damage, and can be ordered to stomp nearby enemies.
+->
+Summon a Gargantuan to guard an area for 20 seconds. Deals 100 damage when summoned, attacks for 140 damage, and can be ordered to stomp nearby enemies.
+
+
+## Yrel
+
+### Divine Favor
+
+Changed plaintext_full_tooltip:
+Casting a Basic Ability reduces the cooldown of Divine Purpose by 2 seconds.
+->
+Casting a Basic Ability reduces the cooldown of Divine Purpose by 1.5 seconds.
+
+
+### Gift of the Naaru
+
+Changed plaintext_full_tooltip:
+Divine Purpose heals the lowest Health nearby allied Hero other than Yrel for 400.
+->
+Divine Purpose heals the lowest Health nearby allied Hero other than Yrel for 275.
+
+
+### Hand of Freedom
+
+Changed plaintext_full_tooltip:
+Grant an allied Hero 35% Movement Speed for 3 seconds and remove all Slows and Roots from them.
+
+Cannot be used on Yrel.
+->
+Grant an allied Hero 50% Movement Speed for 3 seconds and remove all Slows and Roots from them.
+
+Cannot be used on Yrel.
+
+
+### Aegis of Light
+
+Changed plaintext_full_tooltip:
+Upon landing, Avenging Wrath grants other nearby allied Heroes 25 Armor for 5 seconds.
+->
+Upon landing, Avenging Wrath grants other nearby allied Heroes 35 Armor for 5 seconds.
+
+
+### Righteous Momentum
+
+Changed plaintext_full_tooltip:
+While Channeling Righteous Hammer at maximum charge, gain 45% Movement Speed.
+->
+Yrel is no longer slowed while Channeling Righteous Hammer, and at maximum charge she gains 25% Movement Speed.
+
+
+### Templar's Verdict
+
+Changed plaintext_full_tooltip:
+Righteous Hammer reduces the Armor of enemy Heroes hit by 20 for 2 seconds.
+->
+Righteous Hammer reduces the Armor of enemy Heroes hit by 20 for 4 seconds.
+
+
+## Zagara
+
+### Nydus Network
+
+Changed plaintext_full_tooltip:
+Summon a Nydus Worm on Creep anywhere that Zagara has vision. Zagara can enter a Nydus Worm and travel to any other Nydus Worm by right-clicking near it. While inside a Nydus Worm, Zagara regenerates 10% Health and Mana per second.
+
+Stores up to 2 charges. Maximum of 10 Nydus Worms at a time.
+
+Passive: Creep spreads 15% farther. 
+Passive: While on Creep, each Basic Attack reduces all of Zagara's cooldowns by .75 seconds.
+->
+Summon a Nydus Worm on Creep anywhere that Zagara has vision. Zagara can enter a Nydus Worm and travel to any other Nydus Worm by right-clicking near it. While inside a Nydus Worm, Zagara regenerates 10% Health and Mana per second.
+
+Stores up to 2 charges. Maximum of 10 Nydus Worms at a time.
+
+Passive: Creep spreads 15% farther. 
+Passive: While on Creep, each Basic Attack reduces all of Zagara's cooldowns by 0.5 seconds.
+
+
+## Zuljin
+
+### Amani Rage
+
+Talent removed (tier 2).
+Activate to cause Zul'jin to instantly lose 50% of his current Health and heal for that amount over 10 seconds. Zul'jin gains 5 Armor while regenerating health from Amani Rage.
+
+
+### Amani Hide
+
+New talent (tier 2).
+Lower the cooldown of Amani Rage by 10 seconds and gain 10 Armor while you are regenerating Health from it.
+

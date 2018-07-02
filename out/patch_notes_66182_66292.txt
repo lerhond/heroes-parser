@@ -1,0 +1,841 @@
+# Patch notes: 66182 -> 66292
+
+
+## Alarak
+
+### Deadly Charge
+
+Changed plaintext_full_tooltip:
+After channeling, Alarak charges forward dealing 200 damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.6 seconds.
+
+Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.
+
+This ability will take over Alarak's Trait button.
+->
+After channeling, Alarak charges forward dealing 200 damage to all enemies in his path. Distance is increased based on the amount of time channeled, up to 1.5 seconds.
+
+Issuing a Move order while this is channeling will cancel it at no cost. Taking damage will interrupt the channeling.
+
+Changed tree_name:
+AlarakDeadlyChargeItem
+->
+AlarakDeadlyChargeSecondHeroic
+
+Changed face_name:
+AlarakDeadlyCharge2ndHeroic
+->
+AlarakDeadlyCharge
+
+
+## Alexstrasza
+
+### Life-Binder
+
+Changed plaintext_full_tooltip:
+Bind Alexstrasza's life force with an allied Hero. After 2 seconds, the Hero with a lower percentage of Health is set to the same Health percentage as the other Hero.
+->
+Bind Alexstrasza's life force with an allied Hero. Both her and her target are healed for 600 Health over 2 seconds. Afterwards, the Hero with a lower percentage of Health is set to the same Health percentage as the other Hero.
+
+
+## Amazon
+
+### Plate of the Whale
+
+Changed plaintext_full_tooltip:
+Regenerate 5 Health per second while Avoidance is active.
+
+Quest: For every 8 Basic Attacks absorbed with Avoidance, it regenerates an additional 1 Health per second.
+
+Reward: After absorbing 75 Basic Attacks, increase Cassia's maximum Health by 10%.
+->
+Regenerate 5 Health per second while Avoidance is active.
+
+Quest: For every 5 Basic Attacks absorbed with Avoidance, it regenerates an additional 1 Health per second.
+
+Reward: After absorbing 75 Basic Attacks, increase Cassia's maximum Health by 10%.
+
+
+## Anubarak
+
+### Locust Swarm
+
+Changed tree_name:
+AnubarakHeroicAbilityCarrionSwarm
+->
+AnubarakLocustSwarm
+
+Changed face_name:
+AnubarakCarrionSwarm
+->
+AnubarakLocustSwarm
+
+
+### Hive Master
+
+Changed tree_name:
+AnubarakMasteryHiveMasterCarrionSwarm
+->
+AnubarakLocustSwarmHiveMaster
+
+Changed face_name:
+AnubarakCarrionSwarmHiveMasterTalent
+->
+AnubarakLocustSwarmHiveMasterTalent
+
+
+## Azmodan
+
+### March of Sin
+
+Talent removed (tier 3).
+Increases Azmodan's Movement Speed while channeling All Shall Burn to 80% of normal speed.
+
+
+### Sieging Wrath
+
+Talent removed (tier 1).
+Quest: Every time Globe of Annihilation hits a Hero, its damage is increased by 3, up to 90.
+
+Reward: After hitting 30 Heroes, the range of Globe of Annihilation is increased by 33% and its damage is increased by an additional 100.
+
+
+### Fifth Circle
+
+Talent removed (tier 7).
+Black Pool makes Basic Attacks and Abilities slow enemies Attack and Movement Speeds by 40% for 3 seconds.
+
+
+### Infused Power
+
+Talent removed (tier 5).
+All Shall Burn's damage growth maximum is increased by 40%.
+
+
+### Taste for Blood
+
+Talent removed (tier 1).
+Quest: Kill enemy Minions and Heroes within 1.5 seconds of being hit by Globe of Annihilation.
+
+Reward: Enemy Minions that die increase its damage by 2.
+Reward: Enemy Heroes that die increase its damage by 10.
+
+Maximum bonus damage of 500.
+
+
+### Hedonism
+
+Talent removed (tier 5).
+Reduces Globe of Annihilation's Mana cost by 30.
+
+
+### Forced Recruitment
+
+Talent removed (tier 7).
+Reduces General of Hell's cooldown by 10 seconds and gains an additional charge.
+
+
+### Army of Hell
+
+Changed column:
+2
+->
+1
+
+Changed plaintext_full_tooltip:
+Increases Demon Warrior's damage by 20% and reduces their Mana cost by 20.
+->
+Summon Demon Warrior spawns an additional Demon, but its cooldown is increased by 10 seconds.
+
+Changed plaintext_short_tooltip:
+Demon Warriors deal more damage, cost less Mana
+->
+Summon additional Demon Warrior
+
+Changed tree_name:
+AzmodanMasteryArmyOfHell
+->
+AzmodanArmyOfHell
+
+Changed face_name:
+AzmodanSummonDemonWarriorArmyOfHellTalent
+->
+AzmodanArmyOfHell
+
+
+### Hellforged Armor
+
+Changed tier:
+5
+->
+2
+
+Changed column:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+Demon Warriors deal 10 damage to nearby enemies every second and are granted 50 Armor against non-Heroic sources, decreasing the damage they take 50%.
+->
+Demon Warriors and Lieutenants gain 35 Armor and last 4 seconds longer.
+
+Changed plaintext_short_tooltip:
+Demon Warriors burn enemies and take less damage
+->
+Increase Demon Armor and duration
+
+Changed icon:
+storm_ui_icon_azmodan_summondemonwarrior.dds
+->
+storm_ui_icon_azmodan_summondemonwarrior_a.dds
+
+Changed tree_name:
+AzmodanMasteryHellforgedArmor
+->
+AzmodanHellforgedArmor
+
+
+### Sin's Grasp
+
+Changed tier:
+2
+->
+6
+
+Changed column:
+4
+->
+3
+
+Changed plaintext_full_tooltip:
+Activate to curse an enemy Hero, dealing 248 damage over 8 seconds. Minion kills reduce this cooldown by 10 seconds. Can be cast while channeling All Shall Burn.
+->
+Increases the range of All Shall Burn by 20%. If All Shall Burn Channels for its full duration, its cooldown is reduced by None%.
+
+Changed plaintext_short_tooltip:
+Activate to deal damage over time
+->
+Increase All Shall Burn range, reduce cooldown
+
+Changed icon:
+storm_ui_icon_azmodan_sinsgrasp.dds
+->
+storm_ui_icon_azmodan_allshallburn_a.dds
+
+
+### Sin for Sin
+
+Talent removed (tier 6).
+Activate to deal 10% of target enemy Hero's Max Health and heal for twice that amount. Can be cast while channeling All Shall Burn.
+
+
+### Demonic Smite
+
+Talent removed (tier 6).
+Every 7.5 seconds, the Demon Lieutenant will blast a non-Heroic unit dealing 411 damage.
+
+
+### Black Pool
+
+Changed tier:
+4
+->
+7
+
+Changed plaintext_full_tooltip:
+Create a pool that empowers Azmodan, his Demons, and allied Minions, increasing their Basic Attack and Ability damage by 75%. Pools last 5 seconds.
+
+Stores up to 2 charges.
+->
+Globes of Annihilation empowered by Tide of Sin also leave a Black Pool at their impact location for 5 seconds. Enemies within the pool lose 8 Armor per second, up to 15, and take 56 damage per second.
+
+Changed plaintext_short_tooltip:
+Create an empowering zone
+->
+Tide of Sin damages and reduces Armor over time
+
+Changed tree_name:
+AzmodanHeroicAbilityBlackPool
+->
+AzmodanBlackPool
+
+Changed face_name:
+AzmodanBlackPool
+->
+AzmodanTideOfSinBlackPoolTalent
+
+
+### Perishing Flame
+
+Talent removed (tier 7).
+When the Grunts die they explode, dealing 68 damage to nearby enemies. Deals 100% increased damage to Minions, Mercenaries, Monsters, and Structures.
+
+
+### Bolt of the Storm
+
+Talent removed (tier 7).
+Activate to teleport to a nearby location.
+
+
+### Battleborn
+
+Changed tier:
+6
+->
+2
+
+Changed column:
+1
+->
+3
+
+Changed plaintext_full_tooltip:
+If Globe of Annihilation hits an enemy, a Demon Warrior is summoned at the impact point.
+->
+Azmodan's Basic Attacks reduce the cooldown of Summon Demon Warrior by 0.5 seconds and Demon Lieutenant by 1 second.
+
+Changed plaintext_short_tooltip:
+Globe of Annihilation summons a Demon Warrior
+->
+Basic Attacks reduce Demon cooldowns
+
+Changed icon:
+storm_ui_icon_azmodan_globeofannihilation.dds
+->
+storm_ui_icon_talent_autoattack_cooldown.dds
+
+Changed tree_name:
+AzmodanMasteryBattleborn
+->
+AzmodanBattleborn
+
+
+### Gluttony
+
+Changed tier:
+2
+->
+1
+
+Changed column:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+All Shall Burn heals Azmodan for 25% of the damage dealt.
+->
+Increase the number of stacks of Annihilation gained by hitting Heroes with Globe of Annihilation from 2 to 3.
+
+Quest: After gaining 200 Annihilation, each enemy hit by Globe of Annihilation reduces its cooldown by 0.25 seconds, doubled against Heroes.
+
+Changed plaintext_short_tooltip:
+All Shall Burn heals Azmodan
+->
+Quest: Increase Annihilation from hitting Heroes
+
+Changed icon:
+storm_ui_icon_azmodan_allshallburn.dds
+->
+storm_ui_icon_azmodan_globeofannihilation_a.dds
+
+Changed tree_name:
+AzmodanMasteryGluttony
+->
+AzmodanGluttony
+
+Changed face_name:
+AzmodanAllShallBurnGluttonyTalent
+->
+AzmodanGluttony
+
+
+### Gluttonous Ward
+
+Talent removed (tier 3).
+Activate to place a ward on the ground that restores 3% of Azmodan's maximum Health and Mana every second for 10 seconds. Can be cast while channeling All Shall Burn.
+
+
+### Infernal Globe
+
+Talent removed (tier 3).
+Globe of Annihilation's cast time is decreased by 40% and its missile speed is increased by 40%.
+
+
+### Master of Destruction
+
+Changed tier:
+1
+->
+3
+
+Changed plaintext_full_tooltip:
+Reduces the Mana cost from 16 to 10 per second. Every 1.5 seconds spent channeling increases the range by 8.5%, to a maximum of 25%.
+->
+All Shall Burn's final damage applies to all enemies in an area around the target and grants 2 Annihilation per Hero hit.
+
+Changed plaintext_short_tooltip:
+Reduces All Shall Burn Mana cost, increases Range
+->
+All Shall Burn explodes
+
+Changed tree_name:
+AzmodanMasteryMasterOfDestruction
+->
+AzmodanMasterofDestruction
+
+
+### Demonic Invasion
+
+Changed plaintext_full_tooltip:
+Rain a small army of Demonic Grunts down on enemies, dealing 104 damage per impact. Demon Grunts deal 51 damage and have 365 health.
+->
+Rain a small army of Demonic Grunts down on enemies, dealing 65 damage per impact. Grunts deal 42 damage, have 750 health and last up to 8 seconds. When Grunts die they explode, dealing 65 damage to nearby enemies.
+
+
+### Bound Minion
+
+Talent removed (tier 3).
+Using General of Hell on a Minion grants them 75 Armor from non-Heroic sources, decreasing the damage they take by 75%, while also  increasing the damage they deal to non-Heroic targets by 100%. Lasts 30 seconds.
+
+
+### Hellish Hirelings
+
+Talent removed (tier 2).
+The damage bonus from General of Hell is doubled on Mercenaries.
+
+
+### Greed
+
+New talent (tier 1).
+Increase the time Minions will grant Annihilation from 1.5 to 3 seconds.
+
+Quest: After gaining 200 Annihilation, the damage Globe of Annihilation deals against Minions and Mercenaries is increased by 20%.
+
+
+### Bombardment
+
+New talent (tier 3).
+After casting Globe of Annihilation, Azmodan's Basic Attacks within the next 3 seconds have an additional 2.75 range and can hit 2 additional targets. Hitting Heroes with Basic Attacks empowered by Bombardment grant 1 Annihilation.
+
+
+### Brutish Vanguard
+
+New talent (tier 5).
+Demon Warriors gain 25% increased Health and Slow nearby enemies by 20%.
+
+
+### Art of Chaos
+
+New talent (tier 3).
+If Globe of Annihilation hits 2 or more Heroes, restore 25 Mana. If it hits 3 or more Heroes, gain an extra 5 Annihilation.
+
+
+### Siegebreaker
+
+New talent (tier 7).
+Azmodan's Demons deal 50% increased damage to Structures.
+
+
+### Trample
+
+New talent (tier 7).
+Activate to charge a short distance, dealing 240 damage and Slowing enemies caught in the path by 60% for 1 second.
+
+
+### Tide of Sin
+
+New talent (tier 4).
+Activate to make the next Globe of Annihilation cost no Mana and deal 50% more damage.
+
+
+### Hell Rift
+
+New talent (tier 6).
+If All Shall Burn Channels for its full duration, a Demon Warrior is summoned at the target's location and all Demon Warriors deal 100% increased damage for 4 seconds.
+
+
+### Pride
+
+New talent (tier 7).
+After gaining 400 Annihilation, the area of Globe of Annihilation is increased by 15% and it deals 100 additional damage.
+
+
+### Wrath
+
+New talent (tier 1).
+Basic Attacks against Heroes under 75% Health grant 1 Annihilation. 
+
+Quest: After gaining 200 Annihilation, hitting a Hero with Globe of Annihilation increases the damage of Azmodan's next Basic Attack against them within 4 seconds by the amount of Annihilation he has.
+
+
+### Cydaea's Kiss
+
+New talent (tier 5).
+Reduces the Channel time of All Shall Burn by 0.5 seconds. If All Shall Burn's Channel lasts its full duration against a Hero, Azmodan is healed for 5% of his maximum Health.
+
+
+### Chain of Command
+
+New talent (tier 5).
+Demon Lieutenants also grant 25% increased damage to nearby friendly Minions, Mercenaries, and Azmodan's summoned Demons.
+
+
+### Total Annihilation
+
+New talent (tier 6).
+Globe of Annihilation damages Heroes for an additional 3% of their maximum Health.
+
+
+## Guldan
+
+### Improved Life Tap
+
+Changed plaintext_full_tooltip:
+Life Tap now restores 35% Mana
+->
+Increase the Mana restored by Life Tap to 35%.
+
+
+### Chaotic Energy
+
+Changed plaintext_full_tooltip:
+Increases the cast range of Drain Life by 25%.
+
+Quest: The healing provided by Regen Globes is increased by 50%.
+
+Reward: After gathering 20 Regen Globes Gul'dan's Basic Ability Mana costs are permanently reduced by 20.
+->
+Increases the cast range of Drain Life by 25% and the healing provided by Regen Globes by 50%.
+
+Quest: Gather 20 Regen Globes.
+
+Reward: Basic Ability Mana costs are permanently reduced by 20.
+
+
+## Jaina
+
+### Fingers of Frost
+
+Changed plaintext_full_tooltip:
+Quest: Gathering Regeneration Globes to increase Jaina's Mana regeneration by 0.1 per second, up to 2 per second. 
+
+Reward: After gathering 20 Globes, the damage bonus from Frostbite is increased by 10%.
+->
+Quest: Gather Regeneration Globes to increase Jaina's Mana regeneration by 0.1 per second, up to 2 per second. 
+
+Reward: After gathering 20 Globes, the damage bonus from Frostbite is increased by 10%.
+
+
+## LostVikings
+
+### The Sequel!
+
+Changed plaintext_full_tooltip:
+Reduces the Lost Vikings' death timer by 50%.
+->
+Reduces the Lost Vikings's death timer by 50%.
+
+
+## Raynor
+
+### Giant Killer
+
+Talent removed (tier 5).
+Basic Attacks against enemy Heroes deal bonus damage equal to 1.5% of the Hero's maximum Health.
+
+
+### Raynor's Raiders
+
+Talent removed (tier 4).
+Summon two Stealthed Banshees that attack an enemy. Each Banshee deals 50 damage a second and lasts 22 seconds. Can reactivate the Ability to retarget the Banshees.
+
+
+### Vigorous Assault
+
+Talent removed (tier 2).
+Basic Attacks heal for 15% of the damage dealt.
+
+
+### Fight or Flight
+
+Changed tier:
+3
+->
+2
+
+Changed column:
+3
+->
+1
+
+Changed plaintext_full_tooltip:
+Whenever Adrenaline Rush activates, it gives 25 Armor, reducing damage taken by 25% for 4 seconds.  Adrenaline Rush can also be manually activated.
+->
+Reduce Adrenaline Rush's cooldown by 10 seconds. Casting Adrenaline Rush grants 25 Armor for 4 seconds.
+
+Changed plaintext_short_tooltip:
+Adrenaline Rush activateable, grants Armor
+->
+Adrenaline Rush cooldown reduced, grants Armor
+
+
+### Revolution Overdrive
+
+Talent removed (tier 3).
+Gain 10% Movement Speed while affected by Inspire.  Increase this bonus by 5% for each allied Hero nearby when Inspire is cast.
+
+
+### Bullseye
+
+Talent removed (tier 6).
+The first enemy hit by Penetrating Round is stunned for 1 second.
+
+
+### Focused Attack
+
+Talent removed (tier 2).
+Every 10 seconds, your next Basic Attack against a Hero deals 60% additional damage. Basic Attacks reduce this cooldown by 1 second.
+
+
+### Steel Resolve
+
+Talent removed (tier 5).
+Increases Inspire's duration by 50% and causes Adrenaline Rush to also apply Inspire.
+
+
+### Scorched Earth
+
+Talent removed (tier 7).
+An additional set of lasers blast the ground 5 times per second, dealing 40 damage in an area.
+
+
+### Scouting Drone
+
+Talent removed (tier 1).
+Places a Scouting Drone at target location, granting vision and revealing a large area around it for 45 seconds. This drone cannot be hidden and is killed by enemies with 2 Basic Attacks.
+
+Stores up to 2 charges.
+
+
+### A Card to Play
+
+Talent removed (tier 7).
+Whenever an allied or enemy Hero dies, Raynor's Heroic Ability cooldown is reduced by 15 seconds.
+
+
+### Dusk Wings
+
+Talent removed (tier 7).
+Banshees remain Stealthed while attacking and fire 50% more frequently.
+
+
+### Nexus Frenzy
+
+Talent removed (tier 7).
+Increases Attack Speed by 20% and Attack Range by 1.1.
+
+
+### Give Me More!
+
+Changed tier:
+1
+->
+6
+
+Changed column:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+Increases Adrenaline Rush healing by 50%.
+->
+Increase Adrenaline Rush healing by 50%. While Inspire is active, gain 1 Basic Attack range.
+
+Changed plaintext_short_tooltip:
+Adrenaline Rush heals more
+->
+Empower Adrenaline Rush and Inspire
+
+Changed icon:
+storm_ui_icon_raynor_adrenalinrush.dds
+->
+storm_ui_icon_raynor_split_debilitatingrounds.dds
+
+
+### Double-Barreled
+
+Talent removed (tier 5).
+Penetrating Round gains a second charge.
+
+
+### Hyperion
+
+Changed plaintext_full_tooltip:
+Order the Hyperion to make a strafing run dealing 66 damage a second, hitting up to 4 enemies. Also occasionally fires its Yamato Cannon on Structures for 794 damage. Lasts 12 seconds.
+->
+Order the Hyperion to make a strafing run for 12 seconds, hitting up to 4 enemies for 66 damage every second. Every 4 seconds, it can fire its Yamato Cannon at a Structure, dealing 794 damage.
+
+
+### Puttin' On a Clinic
+
+Talent removed (tier 3).
+Whenever an enemy Minion Raynor has recently damaged is destroyed, his Ability cooldowns are reduced by 1.5 seconds.
+
+
+### Executioner
+
+Talent removed (tier 6).
+Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by 30% for 3 seconds.
+
+
+### Hamstring Shot
+
+Talent removed (tier 3).
+Enemies hit by Penetrating Round have a 20% Movement Speed slow for 3 seconds.
+
+
+### Cluster Round
+
+Talent removed (tier 6).
+Penetrating Round damage is increased by 20% for each additional target hit up to 100%, and the width is increased by 50%.
+
+
+### Relentless Leader
+
+Talent removed (tier 2).
+Being Stunned or Rooted knocks away nearby enemies.
+
+This effect has an 8 second cooldown.
+
+Passive: The cooldown of Adrenaline Rush is reduced by 10 seconds.
+
+
+### Confident Aim
+
+Talent removed (tier 2).
+Lowers the cooldown of Penetrating Round by 4 seconds if it hits an enemy Hero.
+
+
+### Seasoned Marksman
+
+Talent removed (tier 1).
+Quest: Every Minion killed near you grants 0.2 Attack Damage, and Takedowns grant 0.5 Attack Damage.
+
+Reward: Upon gaining 40 bonus Attack Damage, you can also activate Seasoned Marksman to increase your Attack Speed by 40% for 3 seconds. 60 second cooldown.
+
+
+### Ace In The Hole
+
+New talent (tier 1).
+Deal 35% more damage to Stunned or Slowed enemies.
+
+
+### Fuel The Rush
+
+New talent (tier 3).
+While Inspire is active, increase Adrenaline Rush's cooldown reduction from Basic Attacks by 200%.
+
+
+### Weak Spot Acquired
+
+New talent (tier 7).
+Enemy Heroes that are the primary target of Give 'Em Some Pepper have their Armor reduced by 25 for 2 seconds.
+
+
+### Veteran Marksman
+
+New talent (tier 1).
+Quest: Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 0.75%.
+
+
+### Behemoth Armor
+
+New talent (tier 2).
+Gain 250 bonus maximum Health. 
+
+ Quest: Every time Give 'Em Some Pepper's primary target is a Hero, gain an additional 5 maximum Health.
+
+
+### Sustaining Rounds
+
+New talent (tier 2).
+Give 'Em Some Pepper heals Raynor for 3% of his maximum Health, increased to 6% if the primary target is a Hero.
+
+
+### Bounty Hunter
+
+New talent (tier 6).
+If Give 'Em Some Pepper's target is a Hero, it deals an additional 3% of their maximum Health as damage and grants Raynor 10 Armor for 3 seconds. 
+
+Activate Give 'Em Some Pepper to apply it to Raynor's next Basic Attack.
+
+
+### Debilitating Rounds
+
+New talent (tier 5).
+Decrease the cooldown of Penetrating Round by 3 seconds. While Inspire is active, Penetrating Round's Slow is increased by 20%.
+
+
+### Dusk Wing
+
+New talent (tier 7).
+Increase the damage, Health, and leash range of Raynor's Raider by 100%. When it dies, both Inspire and Adrenaline Rush are activated for free.
+
+
+### Exterminator
+
+New talent (tier 1).
+Basic Attacks deal 50% more damage to Minions, Mercenaries, and Monsters. This is increased to 100% while Inspire is active.
+
+
+### Paint Them Red
+
+New talent (tier 6).
+Increase the damage of Penetrating Round by 50% and heal for 100% of the damage it deals to Heroes.
+
+
+### Giddy-Up
+
+New talent (tier 5).
+Gain 10% Movement Speed while mounted and unmounted. Inspire grants 10% more Movement Speed.
+
+
+### Indomitable Resolve
+
+New talent (tier 7).
+Acquire Weak Spot lowers the cooldown of Hyperion by 5 seconds if the primary target is a Hero. Inspire grants Raynor Unstoppable for 2 seconds.
+
+
+### Rallying Cry
+
+New talent (tier 5).
+Increase the duration of Inspire by 1 second. Casting Inspire grants nearby allied Heroes 10% Movement and Attack Speed for its duration.
+
+
+### Raynor's Raider
+
+New talent (tier 4).
+Summon a Banshee that assists Raynor. The Banshee deals 96 damage per second and regenerates 75 Health per second if it hasn't taken damage in the last 4 seconds. Can reactivate to retarget or move the Banshee.
+
+The Banshee respawns automatically after 45 seconds.
+
+
+### Unstable Compound
+
+New talent (tier 3).
+Increase the area of Give 'Em Some Pepper by 15%, and enemies hit by it are Slowed by 10% for 3 seconds.
+
+
+### Heavy Slugs
+
+New talent (tier 3).
+Activate to increase the distance of the next Penetrating Round by 30% and increase its Slow duration to 6 seconds.
+
+
+### Execute
+
+New talent (tier 7).
+Increase Attack Speed by 20%. Basic Attack damage is increased by 25% against targets below 50% Health.
+

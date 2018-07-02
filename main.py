@@ -87,6 +87,8 @@ def num(s):
 
 
 def calculate_math(expr):
+    while expr[-1] in ['+', '-', '*', '/']:
+        expr = expr[:-1]
     while '(' in expr:
         last_open = None
         for i, c in enumerate(expr):
