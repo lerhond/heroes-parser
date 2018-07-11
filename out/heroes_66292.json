@@ -2622,10 +2622,10 @@
           "column": 3,
           "english_name": "Sin's Grasp",
           "face_name": "AzmodanSinsGraspHotbar",
-          "html_full_tooltip": "Increases the range of All Shall Burn by <span class=\"tooltip-numbers\">20%</span>. If All Shall Burn Channels for its full duration, its cooldown is reduced by <span class=\"tooltip-numbers\">None%</span>.",
+          "html_full_tooltip": "Increases the range of All Shall Burn by <span class=\"tooltip-numbers\">20%</span>. If All Shall Burn Channels for its full duration, its cooldown is reduced by <span class=\"tooltip-numbers\">50%</span>.",
           "html_short_tooltip": "Increase All Shall Burn range, reduce cooldown",
           "icon": "storm_ui_icon_azmodan_allshallburn_a.dds",
-          "plaintext_full_tooltip": "Increases the range of All Shall Burn by 20%. If All Shall Burn Channels for its full duration, its cooldown is reduced by None%.",
+          "plaintext_full_tooltip": "Increases the range of All Shall Burn by 20%. If All Shall Burn Channels for its full duration, its cooldown is reduced by 50%.",
           "plaintext_short_tooltip": "Increase All Shall Burn range, reduce cooldown",
           "tier": 6,
           "tree_name": "AzmodanSinsGrasp"

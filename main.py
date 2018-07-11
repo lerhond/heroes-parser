@@ -23,6 +23,8 @@ CONSTS = {
     'Behavior,ToothAndClawCarryBehavior,DamageResponse.ModifyFraction': 1,
     # Yrel - Word of Glory
     'Effect,YrelArdentDefenderWordOfGloryCreateHealer,MultiplicativeModifierArray[WordOfGlory].Modifier': 0,
+    # Azmodan - Azmodan - Sin's Grasp
+    'Ability,AzmodanAllShallBurn,Cost[0].CooldownTimeUse': 1,
 }
 
 MATH_SYMBOLS = ['+', '-', '/', '*', '(', ')']
