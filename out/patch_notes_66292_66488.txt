@@ -1,0 +1,91 @@
+# Patch notes: 66292 -> 66488
+
+
+## Azmodan
+
+### Art of Chaos
+
+Changed plaintext_full_tooltip:
+If Globe of Annihilation hits 2 or more Heroes, restore 25 Mana. If it hits 3 or more Heroes, gain an extra 5 Annihilation.
+->
+If Globe of Annihilation hits 2 or more Heroes, restore 30 Mana. If it hits 3 or more Heroes, gain an extra 5 Annihilation.
+
+
+### Greed
+
+Changed plaintext_full_tooltip:
+Increase the time Minions will grant Annihilation from 1.5 to 3 seconds.
+
+Quest: After gaining 200 Annihilation, the damage Globe of Annihilation deals against Minions and Mercenaries is increased by 20%.
+->
+Increase the time Minions will grant Annihilation from 1.5 to 3 seconds.
+
+Quest: After gaining 200 Annihilation, Globe of Annihilation's range is increased by 33% and it deals 20% more damage to Minions and Mercenaries.
+
+
+### Total Annihilation
+
+Changed plaintext_full_tooltip:
+Globe of Annihilation damages Heroes for an additional 3% of their maximum Health.
+->
+Globe of Annihilation damages Heroes for an additional 5% of their maximum Health.
+
+
+### Bombardment
+
+Changed plaintext_full_tooltip:
+After casting Globe of Annihilation, Azmodan's Basic Attacks within the next 3 seconds have an additional 2.75 range and can hit 2 additional targets. Hitting Heroes with Basic Attacks empowered by Bombardment grant 1 Annihilation.
+->
+After casting Globe of Annihilation, Azmodan's Basic Attacks within the next 3 seconds have an additional 2 range and can hit 2 additional targets. Hitting Heroes with Basic Attacks empowered by Bombardment grant 1 Annihilation.
+
+
+### Cydaea's Kiss
+
+Changed plaintext_full_tooltip:
+Reduces the Channel time of All Shall Burn by 0.5 seconds. If All Shall Burn's Channel lasts its full duration against a Hero, Azmodan is healed for 5% of his maximum Health.
+->
+Reduces the Channel time of All Shall Burn by 0.5 seconds. If All Shall Burn's Channel lasts its full duration against a Hero, Azmodan is healed for 8% of his maximum Health.
+
+
+## Raynor
+
+### Bounty Hunter
+
+Changed plaintext_full_tooltip:
+If Give 'Em Some Pepper's target is a Hero, it deals an additional 3% of their maximum Health as damage and grants Raynor 10 Armor for 3 seconds. 
+
+Activate Give 'Em Some Pepper to apply it to Raynor's next Basic Attack.
+->
+If Give 'Em Some Pepper's target is a Hero, it deals an additional 3% of their maximum Health as damage and grants Raynor 5 Armor for 3 seconds. 
+
+Activate Give 'Em Some Pepper to apply it to Raynor's next Basic Attack.
+
+
+### Ace In The Hole
+
+Changed plaintext_full_tooltip:
+Deal 35% more damage to Stunned or Slowed enemies.
+->
+Deal 30% more damage to Stunned or Slowed Heroes.
+
+Changed plaintext_short_tooltip:
+Deal more damage to disabled enemies
+->
+Deal more damage to disabled Heroes
+
+
+### Indomitable Resolve
+
+Changed plaintext_full_tooltip:
+Acquire Weak Spot lowers the cooldown of Hyperion by 5 seconds if the primary target is a Hero. Inspire grants Raynor Unstoppable for 2 seconds.
+->
+Give 'Em Some Pepper lowers the cooldown of Hyperion by 5 seconds if the primary target is a Hero. Inspire grants Raynor Unstoppable for 2 seconds.
+
+
+### Veteran Marksman
+
+Changed plaintext_short_tooltip:
+Quest: Empower Acquire Weak Spot
+->
+Quest: Empower Give 'Em Some Pepper
+
