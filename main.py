@@ -11,7 +11,6 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from html.parser import HTMLParser
 from itertools import chain
-from PIL import Image
 
 
 CONSTS = {
@@ -25,6 +24,17 @@ CONSTS = {
     'Effect,YrelArdentDefenderWordOfGloryCreateHealer,MultiplicativeModifierArray[WordOfGlory].Modifier': 0,
     # Azmodan - Azmodan - Sin's Grasp
     'Ability,AzmodanAllShallBurn,Cost[0].CooldownTimeUse': 1,
+
+    #Auriel - Bestow Hope
+    '$BehaviorTokenCount:AurielRayOfHeavenReservoirOfHopeQuestToken$' : 0,
+    #Azmodan - Summon Demon Warrior
+    'Behavior,AzmodanSummonDemonWarriorBurningDemonBuff,Period' : 1,
+    #Kel'Thuzad - Master of the Cold Dark
+    '$BehaviorStackCount:KelThuzadMasterOfTheColdDarkToken$' : 0,
+    #Tyrael - El'druin's Might
+    'Effect,ElDruinsMightDamage,AttributeFactor[Structure]' : 0,
+    #Varian - Parry
+    'Behavior,VarianParryIncomingDamageReduction,DamageResponse.ModifyFraction' : 0,
 }
 
 MATH_SYMBOLS = ['+', '-', '/', '*', '(', ')']
@@ -213,6 +223,9 @@ roots = []
 
 
 def repl_function(ref):
+    if any(math_sym in ref.group(1) for math_sym in MATH_SYMBOLS):
+        return ref.group(1)
+
     res = get_value_by_path(roots, ref.group(1))
 
     precision = precision_regex.search(ref.group(0))
@@ -235,13 +248,13 @@ class TooltipParser(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
-        if tag == 'c':
+        if tag in ['c','s']:
             self.html_tooltip += '<span class="{}">'.format(slug(attrs['val']))
         else:
             print('WARNING - unknown start tag:', tag, attrs, file=sys.stderr)
 
     def handle_endtag(self, tag):
-        if tag == 'c':
+        if tag in ['c','s']:
             self.html_tooltip += '</span>'
         elif tag == 'n':
             self.plaintext_tooltip += '\n'
@@ -263,6 +276,8 @@ class TooltipParser(HTMLParser):
             else:
                 ref = []
                 if 'score' in attrs and attrs['score'] == 'LostVikingsVikingBriberyStackScore':
+                    math_exp = '0'
+                elif 'score' in attrs and attrs['score'] == 'GenericHeroRealScoreValue1':
                     math_exp = '0'
                 else:
                     math_exp = 'None'
@@ -424,8 +439,43 @@ if __name__ == '__main__':
             del talent['unparsed_full_tooltip']
             talent['plaintext_full_tooltip'] = parser.plaintext_tooltip.strip()
             talent['html_full_tooltip'] = parser.html_tooltip.strip()
+
+        ability_nodes = get_children(hero, lambda el: el.tag == 'HeroAbilArray')
+        abilities = []
+        for ability in ability_nodes:
+            base_ability = get_children(ability, lambda el: el.tag == 'Flags' and el.attrib.get('index') == 'ShowInHeroSelect' and el.attrib.get('value') == '1')
+            if not base_ability:
+                continue
+            face_name = ability.attrib.get('Button') or ability.attrib.get('Abil')
+            icon = icons[face_name]
+            if icon.startswith('Assets\\Textures\\'):
+                icon = icon[len('Assets\\Textures\\'):].lower()
+                icon_set.add(icon)
+            else:
+                print('WARNING - unexpected icon path:', icon)
+            abil = {
+                'face_name': face_name,
+                'english_name' : game_strings['Button/Name/' + face_name],
+                'unparsed_short_tooltip': game_strings.get(simple_tooltips.get(face_name)) or game_strings.get('Button/SimpleDisplayText/' + face_name, ''),
+                'unparsed_full_tooltip': game_strings.get(tooltips.get(face_name)) or game_strings.get('Button/Tooltip/' + face_name, ''),
+                'icon': icon
+            }
+            abilities.append(abil)
+        for ability in abilities:
+            parser = TooltipParser()
+            parser.feed(ability['unparsed_short_tooltip'])
+            del ability['unparsed_short_tooltip']
+            ability['plaintext_short_tooltip'] = parser.plaintext_tooltip.strip()
+            ability['html_short_tooltip'] = parser.html_tooltip.strip()
+            parser = TooltipParser()
+            parser.feed(ability['unparsed_full_tooltip'])
+            del ability['unparsed_full_tooltip']
+            ability['plaintext_full_tooltip'] = parser.plaintext_tooltip.strip()
+            ability['html_full_tooltip'] = parser.html_tooltip.strip()
+
         heroes[hero.attrib['id']] = {}
         heroes[hero.attrib['id']]['talents'] = talents
+        heroes[hero.attrib['id']]['abilities'] = abilities
 
     print('Saving JSON')
     data = {
