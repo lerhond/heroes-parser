@@ -224,7 +224,7 @@ roots = []
 
 def repl_function(ref):
     if any(math_sym in ref.group(1) for math_sym in MATH_SYMBOLS):
-        return ref.group(1)
+        return '(' + ref.group(1) + ')'
 
     res = get_value_by_path(roots, ref.group(1))
 
