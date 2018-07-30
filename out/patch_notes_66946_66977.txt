@@ -1,0 +1,456 @@
+# Patch notes: 66946 -> 66977
+
+
+## Alexstrasza
+
+### Life-Binder
+
+Changed plaintext_full_tooltip:
+Bind Alexstrasza's life force with an allied Hero. Both her and her target are healed for 600 Health over 2 seconds. Afterwards, the Hero with a lower percentage of Health is set to the same Health percentage as the other Hero.
+->
+Bind Alexstrasza's life force with an allied Hero. Both her and her target are healed for 600 Health over 2 seconds. Afterwards, the Hero with a lower percentage of Health is healed to the same Health percentage as the other Hero.
+
+
+## Barbarian
+
+### Hurricane
+
+Changed plaintext_short_tooltip:
+Whirlwind removes slows and roots
+->
+Whirlwind removes Slows and Roots
+
+
+## Chen
+
+### Accumulating Flame
+
+Changed plaintext_full_tooltip:
+Quest: Every time a Hero is Ignited with Breath of Fire, increase its damage over time by 2%, up to 60%.
+
+Reward: After Igniting 30 Heroes, gain 25 Armor for 1 second per Hero Ignited, reducing damage taken by 25%.
+->
+Quest: Every time a Hero is Ignited with Breath of Fire, increase its damage over time by 2%, up to 60%.
+
+Reward: After Igniting 30 Heroes, gain 15 Armor for every enemy Hero ignited with Breath Of Fire. This lasts for 3 seconds.
+
+
+## Chromie
+
+### Time Out
+
+Changed plaintext_full_tooltip:
+Activate to place Chromie in Stasis and gain Invulnerability for up to 7 seconds. Can be reactivated to end the effect early.
+->
+Activate to place Chromie in Stasis and gain Invulnerability for up to 5 seconds. Can be reactivated to end the effect early.
+
+
+### Mounting Sand
+
+Changed plaintext_full_tooltip:
+Hitting 3 or more consecutive Sand Blasts without missing counts as hitting 3 Heroes.
+->
+Increase the damage of Echo's Sand Blast by 40%. Hitting 3 or more consecutive Sand Blasts without missing counts as hitting 3 Heroes.
+
+
+### Mobius Loop
+
+Changed plaintext_full_tooltip:
+Reduce Dragon’s Breath's Mana cost and cooldown by 50%, but also reduce its damage by 25%.
+->
+If Dragon's Breath hits a Hero, reduce its cooldown by 2 seconds and restore 50 Mana.
+
+Changed plaintext_short_tooltip:
+Reduce Dragon’s Breath Mana, cooldown, damage
+->
+Hitting Heroes reduces Dragon's Breath cooldown
+
+
+### Timewalker's Pursuit
+
+Changed plaintext_full_tooltip:
+Activate to reveal the targeted area for 2 seconds. Enemies seen are revealed for 4 seconds.
+
+Quest: Gathering a Regeneration Globe increases Chromie's Mana Regeneration by 0.1, up to 1.5.
+
+Reward: After gathering 15 Globes Chromie also gains 5% Spell Power.
+->
+Activate to reveal the targeted area for 2 seconds. Enemies seen are revealed for 4 seconds.
+
+Quest: Gather 15 Regeneration Globes.
+
+Reward: After gathering 15 Globes, Chromie gains 5% Spell Power and her Mana Regeneration is increased by 1.
+
+
+### Bronze Talons
+
+Talent removed (tier 2).
+Increase Chromie's Basic Attack range by 35%. Using Sand Blast increases the damage of her next Basic Attack by 250%.
+
+
+### Piercing Sands
+
+Changed plaintext_full_tooltip:
+Sand Blast will now hit all Heroes in its path. Additional hits do not grant bonus damage or Quest progress.
+->
+Sand Blast will now hit all Heroes in its path. Additional hits do not grant Quest progress.
+
+
+### Fast Forward
+
+Changed plaintext_full_tooltip:
+If Sand Blast travels at least 75% of its base distance and hits a Hero, its cooldown is reduced to 0.75 seconds.
+->
+If Sand Blast travels at least 70% of its base distance and hits a Hero, its cooldown is reduced to 0.75 seconds.
+
+
+### Chrono Sickness
+
+Changed plaintext_full_tooltip:
+Reduce Time Trap's cooldown and Mana cost by 50%. After the Time Stop ends, the enemy is also Slowed by 50% for 4 seconds.
+->
+Reduce Time Trap's cooldown and Mana cost by 50%. After the Time Stop ends, the enemy is also Slowed by 35% for 4 seconds.
+
+
+### Quantum Overdrive
+
+Changed plaintext_full_tooltip:
+Activate to increase Spell Power by 20% for 10 seconds.
+->
+Activate to increase Spell Power by 25% for 10 seconds.
+
+
+### Draconic Barrage
+
+New talent (tier 2).
+Increase the damage from Bronze Talons by an additional 100%. Hitting an enemy Hero with Sand Blast applies Bronze Talons to Chromie's next 2 Basic Attacks.
+
+
+## Guldan
+
+### Curse of Exhaustion
+
+Changed plaintext_full_tooltip:
+Drain Life deals 50% more damage and slows the target's movement speed by 25% if they are afflicted by Corruption.
+->
+Drain Life deals 50% more damage and Slows the target's Movement Speed by 25% if they are afflicted by Corruption.
+
+
+## Kerrigan
+
+### Siphoning Impact
+
+Changed tree_name:
+KerriganMasteryRavageSiphoningImpact
+->
+KerriganSiphoningImpactRavage
+
+
+### Aggressive Defense
+
+Changed tree_name:
+KerriganMasteryAggressiveDefense
+->
+KerriganAggressiveDefense
+
+
+### Eviscerate
+
+Changed tree_name:
+KerriganMasteryEviscerate
+->
+KerriganEviscerate
+
+
+### Psionic Pulse
+
+Changed tree_name:
+KerriganMasteryPrimalGraspPsionicPulse
+->
+KerriganPsionicPulsePrimalGrasp
+
+
+### Sharpened Blades
+
+Changed tree_name:
+KerriganMasteryImpalingBladesSharpenedBlades
+->
+KerriganSharpenedBladesImpalingBlades
+
+
+### Omegastorm
+
+Changed tree_name:
+KerriganMasteryMaelstromOmegastorm
+->
+KerriganOmegastormMaelstrom
+
+
+### Bladed Momentum
+
+Changed tree_name:
+BattleMomentumKerrigan
+->
+KerriganBladedMomentum
+
+
+### Torrasque
+
+Changed tree_name:
+KerriganMasteryTorrasqueSummonUltralisk
+->
+KerriganTorrasqueSummonUltralisk
+
+
+### Clean Kill
+
+Changed tree_name:
+KerriganMasteryRavageCleanKill
+->
+KerriganCleanKillRavage
+
+
+### Blade Torrent
+
+Changed tree_name:
+KerriganMasteryImpalingBladesBladeTorrent
+->
+KerriganBladeTorrentImpalingBlades
+
+
+## L90ETC
+
+### Echo Pedal
+
+Changed plaintext_full_tooltip:
+Using a Basic or Heroic Ability releases two pulses of 15 damage.  This deals 250% bonus damage to Minions and Mercenaries. The first occurs instantly, the second occurs 2 seconds later.
+->
+Using a Basic or Heroic Ability releases two pulses of 15 damage.  This deals 250% bonus damage to Minions, Mercenaries, and Monsters. The first occurs instantly, the second occurs 2 seconds later.
+
+
+## Samuro
+
+### Burning Blade
+
+Changed plaintext_full_tooltip:
+Critical Strikes from Samuro and Mirror Images deal an additional 50% of their Basic Attack damage to the target and nearby enemies.
+->
+Critical Strikes from Samuro and Mirror Images deal an additional 50% of their Basic Attack damage as Spell Damage to the target and nearby enemies.
+
+
+## Stukov
+
+### Within My Reach
+
+Talent removed (tier 3).
+Increase the range of Lurking Arm by 50%.
+
+
+### Vigorous Reuptake
+
+Changed column:
+4
+->
+3
+
+Changed plaintext_full_tooltip:
+Quest: Detonate 50 Healing Pathogens with Bio-Kill Switch.
+
+Reward: Increase Bio-Kill Switch's healing by 40%.
+->
+Bio-Kill Switch heals for 25% more when detonating 3 or more Healing Pathogens.
+
+Changed plaintext_short_tooltip:
+Quest: Increase Bio-Kill Switch healing
+->
+Increase Bio-Kill Switch healing
+
+
+### Biotic Armor
+
+Changed column:
+3
+->
+2
+
+Changed plaintext_full_tooltip:
+Healing Pathogen grants 50 Physical Armor to its initial target while active on them.
+->
+Healing Pathogen grants 15 Physical Armor to targets while active on them. Detonating Bio-Kill Switch increases this bonus by 35 for 2.5 seconds.
+
+
+### Growing Infestation
+
+Changed tier:
+1
+->
+3
+
+Changed column:
+3
+->
+2
+
+Changed plaintext_full_tooltip:
+Lurking Arm's area expands by 50% over 2.5 seconds but its cooldown is increased by 5 seconds.
+->
+Lurking Arm's area expands by 50% over 2.5 seconds, but it cannot be Channeled for longer than 4 seconds.
+
+Changed plaintext_short_tooltip:
+Lurking Arm expands, cooldown increased
+->
+Lurking Arm expands, has set duration
+
+
+### Targeted Excision
+
+Changed column:
+4
+->
+3
+
+
+### Low Blow
+
+Changed tier:
+5
+->
+1
+
+Changed column:
+2
+->
+3
+
+Changed plaintext_full_tooltip:
+Lurking Arm deals 150% more damage to enemy Heroes below 30% Health.
+->
+Lurking Arm deals 100% more damage to enemy Heroes below 30% Health.
+
+
+### Poppin' Pustules
+
+Changed plaintext_full_tooltip:
+Increase the final damage of Weighted Pustule by 50%.
+
+Quest: Detonate 10 Weighted Pustules without dying.
+
+Reward: Detonating a Weighted Pustule now applies its damage and Slow in an area.
+->
+Detonating Weighted Pustule with Bio-Kill Switch within 1.5 seconds of its expiration increases its damage by 100% and applies its damage and Slow in an area.
+
+Changed plaintext_short_tooltip:
+Quest: Empower Weighted Pustule
+->
+Weighted Pustule can detonate in an area
+
+
+### The Long Pitch
+
+Changed plaintext_full_tooltip:
+Increase the range of Weighted Pustule by 100%.
+->
+Increase the range of Weighted Pustule by 50%. Detonating 2 or more Weighted Pustules causes Stukov's Bio-Kill Switch and Basic Ability cooldowns to recharge 100% faster for 3 seconds.
+
+Changed plaintext_short_tooltip:
+Increase Weighted Pustule range
+->
+Increase Weighted Pustule range, reduce cooldowns
+
+
+### Push Comes To Shove
+
+Changed plaintext_full_tooltip:
+Massive Shove travels 25% faster. If Massive Shove pushes a target for more than 1.25 seconds, its cooldown is reduced by 15 seconds.
+->
+Massive Shove slows its target by 50% for 4 seconds upon colliding with terrain. If Massive Shove pushes a target for more than 1.25 seconds, its cooldown is reduced by 15 seconds.
+
+Changed plaintext_short_tooltip:
+Increase Massive Shove speed, can reduce cooldown
+->
+Massive Shove Slows, can reduce cooldown
+
+
+### It Hungers
+
+Changed tier:
+3
+->
+5
+
+Changed column:
+3
+->
+2
+
+Changed plaintext_full_tooltip:
+Each time an enemy Hero is hit by Lurking Arm, reduce its cooldown by 0.5 seconds, up to 6.5 seconds, and restore 10 Mana.
+->
+Increase the range of Lurking Arm by 20%. If Lurking Arm damages enemy Heroes 15 times, its cooldown is reset and its Mana cost is refunded.
+
+Changed plaintext_short_tooltip:
+Hitting Heroes reduces Lurking Arm cooldown
+->
+Lurking Arm cost can be refunded
+
+Changed icon:
+storm_ui_icon_stukov_lurkingarm_a.dds
+->
+storm_ui_icon_stukov_lurkingarm.dds
+
+
+### Bio-Explosion Switch
+
+Changed column:
+3
+->
+4
+
+
+### Top Off
+
+Changed tier:
+2
+->
+7
+
+Changed column:
+2
+->
+3
+
+Changed plaintext_full_tooltip:
+Healing Pathogen's heal over time on its initial target is increased by 50% while they are above 60% Health.
+->
+Healing Pathogen's heal over time is increased by 30% while its target is above 60% Health.
+
+Changed plaintext_short_tooltip:
+Healing Pathogen stronger on high Health target
+->
+Healing Pathogen stronger at high Health
+
+Changed icon:
+storm_ui_icon_stukov_healingpathogen_a.dds
+->
+storm_ui_icon_stukov_healingpathogen.dds
+
+
+## Zagara
+
+### Tyrant Maw
+
+Changed plaintext_full_tooltip:
+Devouring Maw deals 50% more damage and getting a Takedown reduce its cooldown by 25 seconds.
+->
+Devouring Maw deals 50% more damage. Takedowns reduce its cooldown by 25 seconds.
+
+
+## Zuljin
+
+### Amani Hide
+
+Changed plaintext_full_tooltip:
+Lower the cooldown of Amani Rage by 10 seconds and gain 10 Armor while you are regenerating Health from it.
+->
+Lower the cooldown of Amani Rage by 10 seconds and gain 10 Armor while regenerating Health from it.
+

@@ -1,0 +1,12 @@
+# Patch notes: 66810 -> 66946
+
+
+## Malfurion
+
+### Rejuvenation
+
+Changed plaintext_full_tooltip:
+Malfurion regenerates 5 Health per second for every active Regrowth.
+->
+Malfurion gains 100% base Health regeneration for every active Regrowth.
+
