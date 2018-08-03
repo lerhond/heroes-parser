@@ -372,6 +372,7 @@ if __name__ == '__main__':
     icons = {}
     tooltips = {}
     simple_tooltips = {}
+    button_names = {}
     for child in get_children(roots, lambda el: el.tag == 'CButton' and 'id' in el.attrib):
         c = get_children(child, lambda el: el.tag == 'Icon')
         if c:
@@ -382,6 +383,9 @@ if __name__ == '__main__':
         st = get_children(child, lambda el: el.tag == 'SimpleDisplayText')
         if st:
             simple_tooltips[child.attrib['id']] = st[0].attrib['value']
+        nm = get_children(child, lambda el: el.tag == 'Name')
+        if nm:
+            button_names[child.attrib['id']] = nm[0].attrib['value']
 
     heroes = {}
     hero_nodes = get_children(roots, lambda el: el.tag == 'CHero')
@@ -406,7 +410,7 @@ if __name__ == '__main__':
                 'face_name': face_name,
                 'tier': int(talent.attrib['Tier']),
                 'column': int(talent.attrib['Column']),
-                'english_name': game_strings['Button/Name/' + face_name],
+                'english_name': game_strings[button_names.get(face_name) or ('Button/Name/' + face_name)],
                 'unparsed_short_tooltip': game_strings[simple_tooltips.get(face_name) or ('Button/SimpleDisplayText/' + face_name)],
                 'unparsed_full_tooltip': game_strings[tooltips.get(face_name) or ('Button/Tooltip/' + face_name)],
                 'icon': icon

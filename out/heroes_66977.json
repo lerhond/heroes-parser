@@ -16744,7 +16744,7 @@
         },
         {
           "column": 1,
-          "english_name": "Phase Shift",
+          "english_name": "Archon",
           "face_name": "TassadarArchon",
           "html_full_tooltip": "Tassadar transforms into an Archon and gains a Plasma Shield. His Basic Attacks deal <span class=\"tooltip-numbers\">158</span> damage, slow the target by <span class=\"tooltip-numbers\">30%</span> for <span class=\"tooltip-numbers\">1</span> second and splash for <span class=\"tooltip-numbers\">79</span> damage to enemies within <span class=\"tooltip-numbers\">2.5</span> range. Lasts for <span class=\"tooltip-numbers\">10</span> seconds.<br /><br /><span class=\"ability-passive\">Passive:</span> Archon refreshes the cooldown of Dimensional Shift.",
           "html_short_tooltip": "Become an Archon",
@@ -16840,7 +16840,7 @@
         },
         {
           "column": 1,
-          "english_name": "Phase Shift",
+          "english_name": "Twilight Archon",
           "face_name": "TassadarArchonTwilightArchonTalent",
           "html_full_tooltip": "Basic Attacks while in Archon form increase its duration by <span class=\"tooltip-numbers\">2</span> seconds.",
           "html_short_tooltip": "Basic Attacks increase Archon duration",
