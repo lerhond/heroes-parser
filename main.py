@@ -22,19 +22,21 @@ CONSTS = {
     'Behavior,ToothAndClawCarryBehavior,DamageResponse.ModifyFraction': 1,
     # Yrel - Word of Glory
     'Effect,YrelArdentDefenderWordOfGloryCreateHealer,MultiplicativeModifierArray[WordOfGlory].Modifier': 0,
-    # Azmodan - Azmodan - Sin's Grasp
+    # Azmodan - Sin's Grasp
     'Ability,AzmodanAllShallBurn,Cost[0].CooldownTimeUse': 1,
 
-    #Auriel - Bestow Hope
-    '$BehaviorTokenCount:AurielRayOfHeavenReservoirOfHopeQuestToken$' : 0,
-    #Azmodan - Summon Demon Warrior
-    'Behavior,AzmodanSummonDemonWarriorBurningDemonBuff,Period' : 1,
-    #Kel'Thuzad - Master of the Cold Dark
-    '$BehaviorStackCount:KelThuzadMasterOfTheColdDarkToken$' : 0,
-    #Tyrael - El'druin's Might
-    'Effect,ElDruinsMightDamage,AttributeFactor[Structure]' : 0,
-    #Varian - Parry
-    'Behavior,VarianParryIncomingDamageReduction,DamageResponse.ModifyFraction' : 0,
+    # Auriel - Bestow Hope
+    '$BehaviorTokenCount:AurielRayOfHeavenReservoirOfHopeQuestToken$': 0,
+    # Azmodan - Summon Demon Warrior
+    'Behavior,AzmodanSummonDemonWarriorBurningDemonBuff,Period': 1,
+    # Kel'Thuzad - Master of the Cold Dark
+    '$BehaviorStackCount:KelThuzadMasterOfTheColdDarkToken$': 0,
+    # Tyrael - El'druin's Might
+    'Effect,ElDruinsMightDamage,AttributeFactor[Structure]': 0,
+    # Varian - Parry
+    'Behavior,VarianParryIncomingDamageReduction,DamageResponse.ModifyFraction': 0,
+    # Whitemane - Zeal
+    'Effect,WhitemaneZealCreateHealer,MultiplicativeModifierArray[ZealBase].Modifier': 0,
 }
 
 MATH_SYMBOLS = ['+', '-', '/', '*', '(', ')']
@@ -325,6 +327,11 @@ class TooltipParser(HTMLParser):
 
 if __name__ == '__main__':
     args = sys.argv[1:]
+    only_hero = None
+    for i in range(len(args)):
+        if '--hero=' in args[i]:
+            only_hero = args[i].replace('--hero=', '')
+            args = args[:i] + args[i+1:]
     if len(args) != 1:
         print('You need to provide a path to a Heroes of the Storm installation, or --skip-extracting.\n'
               'When using --skip-extracting, provide extracted files in ./extract/.')
@@ -411,6 +418,8 @@ if __name__ == '__main__':
         if not talent_nodes:
             continue
         print(hero.attrib['id'])
+        if only_hero is not None and only_hero != hero.attrib['id']:
+            continue
         talents = []
         for talent in talent_nodes:
             face_name = talent_faces[talent.attrib['Talent']]
@@ -459,7 +468,7 @@ if __name__ == '__main__':
                 print('WARNING - unexpected icon path:', icon)
             abil = {
                 'face_name': face_name,
-                'english_name' : game_strings['Button/Name/' + face_name],
+                'english_name': game_strings[button_names.get(face_name) or ('Button/Name/' + face_name)],
                 'unparsed_short_tooltip': game_strings.get(simple_tooltips.get(face_name)) or game_strings.get('Button/SimpleDisplayText/' + face_name, ''),
                 'unparsed_full_tooltip': game_strings.get(tooltips.get(face_name)) or game_strings.get('Button/Tooltip/' + face_name, ''),
                 'icon': icon
@@ -500,7 +509,7 @@ if __name__ == '__main__':
         run_extractor(['mods/heroes.stormmod/base.stormassets/Assets/Textures/storm_ui_icon_*.dds'])
     for icon in sorted(icon_set):
         icon_path = 'mods/heroes.stormmod/base.stormassets/Assets/Textures/' + icon
-        if not (icon.startswith('storm_ui_icon_') and icon.endswith('.dds')):
+        if (not (icon.startswith('storm_ui_icon_') and icon.endswith('.dds'))) and not skip_extracting:
             run_extractor([icon_path])
         shutil.copy('./extract/' + icon_path, './out/icons/')
 
