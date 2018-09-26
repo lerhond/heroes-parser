@@ -367,15 +367,17 @@ if __name__ == '__main__':
     for root, dirs, files in chain(
             os.walk('./extract/mods/heromods/'),
             os.walk('./extract/mods/heroesdata.stormmod/base.stormdata/GameData/'),
+            os.walk('./extract/mods/heroesdata.stormmod/base.stormdata/gamedata/'),
             os.walk('./extract/mods/heroesdata.stormmod/enus.stormdata'),
-            os.walk('./extract/mods/core.stormmod/base.stormdata/GameData')):
+            os.walk('./extract/mods/core.stormmod/base.stormdata/GameData'),
+            os.walk('./extract/mods/core.stormmod/base.stormdata/gamedata')):
         for file in files:
             full_path = os.path.join(root, file)
-            if full_path.endswith('.xml') and 'SkinData' not in full_path and 'SoundData' not in full_path:
+            if full_path.endswith('.xml') and 'skindata' not in full_path.lower() and 'sounddata' not in full_path.lower():
                 tree = ET.parse(full_path)
                 trees.append(tree)
                 roots.append(tree.getroot())
-            elif full_path.endswith('GameStrings.txt') and 'enus' in full_path:
+            elif full_path.lower().endswith('gamestrings.txt') and 'enus' in full_path:
                 with open(full_path, 'r', encoding='utf-8') as f:
                     tmp = f.read().strip().split('\n')
                 for line in tmp:
@@ -424,8 +426,8 @@ if __name__ == '__main__':
         for talent in talent_nodes:
             face_name = talent_faces[talent.attrib['Talent']]
             icon = icons[face_name]
-            if icon.startswith('Assets\\Textures\\'):
-                icon = icon[len('Assets\\Textures\\'):].lower()
+            if icon.lower().startswith('assets\\textures\\'):
+                icon = icon[len('assets\\textures\\'):].lower()
                 icon_set.add(icon)
             else:
                 print('WARNING - unexpected icon path:', icon)
@@ -461,8 +463,8 @@ if __name__ == '__main__':
                 continue
             face_name = ability.attrib.get('Button') or ability.attrib.get('Abil')
             icon = icons[face_name]
-            if icon.startswith('Assets\\Textures\\'):
-                icon = icon[len('Assets\\Textures\\'):].lower()
+            if icon.lower().startswith('assets\\textures\\'):
+                icon = icon[len('assets\\textures\\'):].lower()
                 icon_set.add(icon)
             else:
                 print('WARNING - unexpected icon path:', icon)
@@ -506,9 +508,9 @@ if __name__ == '__main__':
 
     if not skip_extracting:
         print('Extracting icons')
-        run_extractor(['mods/heroes.stormmod/base.stormassets/Assets/Textures/storm_ui_icon_*.dds'])
+        run_extractor(['mods/heroes.stormmod/base.stormassets/assets/textures/storm_ui_icon_*.dds'])
     for icon in sorted(icon_set):
-        icon_path = 'mods/heroes.stormmod/base.stormassets/Assets/Textures/' + icon
+        icon_path = 'mods/heroes.stormmod/base.stormassets/assets/textures/' + icon
         if (not (icon.startswith('storm_ui_icon_') and icon.endswith('.dds'))) and not skip_extracting:
             run_extractor([icon_path])
         shutil.copy('./extract/' + icon_path, './out/icons/')
