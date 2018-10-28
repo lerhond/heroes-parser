@@ -1,0 +1,685 @@
+# Patch notes: 68509 -> 68778
+
+
+## Alarak
+
+### Last Laugh
+
+Changed plaintext_full_tooltip:
+Activate teleport to the chosen location and remove all Roots, Slows, and damage over time effects. If Alarak fails to hit enemy Heroes 3 times with Basic Abilities within 4 seconds of using Last Laugh, his Health is reduced to 1.
+->
+Activate to teleport to the chosen location and remove all Roots, Slows, and damage over time effects. If Alarak fails to hit enemy Heroes 3 times with Basic Abilities within 4 seconds of using Last Laugh, his Health is reduced to 1.
+
+
+## Ana
+
+### Debilitating Dart
+
+Changed plaintext_full_tooltip:
+Activate to fire a dart which slows the movement speed and reduces the damage dealt by the first enemy Hero it hits by 50% for 3 seconds.
+->
+Activate to fire a dart which Slows the Movement Speed and reduces the damage dealt by the first enemy Hero it hits by 50% for 3 seconds.
+
+Changed plaintext_short_tooltip:
+Fire a dart that reduces damage and slows
+->
+Fire a dart that reduces damage and Slows
+
+
+## Cho
+
+### Rollback
+
+Changed icon:
+storm_ui_icon_cho_runebomb_var1.dds
+->
+storm_ui_icon_cho_runebomb.dds
+
+
+## FaerieDragon
+
+### Double Wyrmhole
+
+Talent removed (tier 7).
+Blink Heal can be cast a second time on a different target within 2 seconds without consuming a charge.
+
+
+### Hardened Focus
+
+Talent removed (tier 6).
+While above 80% life, your Basic Ability cooldowns regenerate 50% faster.
+
+
+### Pixie Charm
+
+Changed plaintext_full_tooltip:
+Each time Brightwing heals an Allied Hero with Soothing Mist, she gains a stack of Bribe. Use 20 stacks to bribe a Mercenary, instantly defeating them. Does not work on Bosses. Maximum of 80 stacks.
+->
+Activate to consume 20 stacks of Bribe to instantly defeat an uncaptured Mercenary.
+
+Passive: Gain 1 stack of Bribe when a nearby enemy Minion dies, and 5 stacks when hitting an enemy Hero with Arcane Flare's center. Maximum 80 stacks.
+
+Changed plaintext_short_tooltip:
+Heal Allies with Soothing Mist to bribe a Mercenary
+->
+Activate to instantly defeat a Mercenary
+
+
+### Phase Shield
+
+Talent removed (tier 3).
+After finishing the teleport, both Brightwing and her target gain a 335 point Shield for 10 seconds.
+
+
+### Ice Block
+
+Talent removed (tier 5).
+Activate to place yourself in Stasis and gain Invulnerability for 3 seconds.
+
+
+### Unstable Anomaly
+
+Changed column:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+When Polymorph ends, deal 108 damage to the target and all nearby enemies.
+->
+Increase Polymorph's Slow by 15%. Upon expiration, Polymorph deals damage to nearby enemy Heroes equal to 2% of their maximum Health.
+
+Changed plaintext_short_tooltip:
+Polymorphed targets explode
+->
+Polymorph Slows more, target explodes
+
+
+### Emerald Wind
+
+Changed plaintext_full_tooltip:
+After 0.5 seconds, create an expanding nova of wind, dealing 303 damage and pushing enemies away. 
+
+Passive: Increases the healing of Soothing Mist by 5%.
+->
+After 0.5 seconds, create an expanding nova of wind, dealing 225 damage and pushing enemies away.
+
+
+### Greater Polymorph
+
+Changed tier:
+6
+->
+1
+
+Changed plaintext_full_tooltip:
+Increases the duration of Polymorph by 0.75 seconds.
+->
+Increase Polymorph's range by 30%. Hero Takedowns refresh the cooldown of Polymorph.
+
+Changed plaintext_short_tooltip:
+Increases Polymorph duration
+->
+Takedowns refresh Polymorph cooldown
+
+
+### Pixie Boost
+
+Changed column:
+2
+->
+1
+
+Changed plaintext_full_tooltip:
+Pixie Dust gives 50% bonus Move Speed, decaying to 20% over 1.5 seconds.
+->
+Pixie Dust gives 40% bonus Movement Speed, decaying to 20% over 3 seconds.
+
+
+### Dream Shot
+
+Changed tier:
+1
+->
+2
+
+Changed plaintext_full_tooltip:
+Increase the range of Arcane Flare by 50%. If an enemy Hero is hit by the inner radius, reduce its cooldown to 1 second.
+->
+Increase Arcane Flare's range by 50%. Hitting a Hero with Arcane Flare's center reduces its cooldown to 2 seconds.
+
+Changed plaintext_short_tooltip:
+Empowers Arcane Flare
+->
+Arcane Flare center hits reduce cooldown
+
+
+### Revitalizing Mist
+
+Talent removed (tier 7).
+Healing another Hero with Soothing Mist increases their healing received from Soothing Mist by 25% for 6 seconds. Stacks 3 times.
+
+
+### Hyper Shift
+
+Changed plaintext_full_tooltip:
+Each allied Hero healed by Soothing Mist reduces the cooldown of Phase Shift by 3 seconds.
+->
+Increase Phase Shift's healing by an additional 10% of the target's maximum Health. Nearby enemy Minion deaths reduce Phase Shift's cooldown by 2 seconds.
+
+Changed plaintext_short_tooltip:
+Soothing Mist reduces Phase Shift cooldown
+->
+Increase Phase Shift healing
+
+
+### Cleanse
+
+Talent removed (tier 3).
+Activate to make target ally Unstoppable for 1 second. Cannot be cast on yourself.
+
+
+### Storm Shield
+
+Talent removed (tier 7).
+Activate to give all nearby allied Heroes a Shield for 20% of their max Health for 3 seconds.
+
+
+### Bouncy Dust
+
+Talent removed (tier 6).
+Pixie Dust bounces to another nearby ally upon impact.
+
+
+### Critterize
+
+Changed icon:
+storm_ui_icon_brightwing_polymorph_var1.dds
+->
+storm_ui_icon_brightwing_polymorph.dds
+
+
+### Shield Dust
+
+Talent removed (tier 5).
+Pixie Dust grants 50 Physical Armor for 3 seconds, reducing Physical damage taken by 50%.
+
+
+### Continuous Winds
+
+Talent removed (tier 7).
+Emerald Wind releases two additional novas that deal 25% damage. Also further increases the healing bonus of Soothing Mist by 7%.
+
+
+### Manic Pixie
+
+Talent removed (tier 2).
+When Soothing Mist heals an ally with Pixie Dust on them, they heal for an additional 104 over 4 seconds.
+
+
+### Blink Heal
+
+Changed plaintext_full_tooltip:
+Teleport to a nearby ally, healing them for 200.
+
+Stores up to 2 charges.
+->
+Teleport to a nearby ally. When teleporting to a Hero, heal them for 200.
+
+Stores up to 2 charges.
+
+
+### Mistified
+
+Talent removed (tier 3).
+Reduces the cooldown of Soothing Mist by 0.5 seconds every time Brightwing casts a Basic Ability.
+
+
+### Peekaboo!
+
+Changed tier:
+2
+->
+3
+
+Changed column:
+3
+->
+2
+
+Changed plaintext_full_tooltip:
+Phase Shifting to an ally casts a free Pixie Dust on them and reveals a large area around them and all enemies in it for 6 seconds.
+->
+Phase Shifting to an ally grants both Brightwing and her target a 335 point Shield and reveals a large area around them for 5 seconds.
+
+Changed plaintext_short_tooltip:
+Empowers Phase Shift
+->
+Phase Shift grants a Shield, reveals an area
+
+
+### Sticky Flare
+
+Changed tier:
+5
+->
+3
+
+Changed plaintext_full_tooltip:
+Enemies hit by Arcane Flare have their Movement Speed slowed by 40% for 2 seconds.
+->
+Enemy Heroes hit by Arcane Flare have their Movement Speed Slowed by 20% for 3 seconds. Increase the Slow to 40% if they are hit by the center portion.
+
+Changed plaintext_short_tooltip:
+Arcane Flare slows enemies
+->
+Arcane Flare Slows enemies
+
+Changed tree_name:
+FaerieDragonMasteryStickyFlare
+->
+BrightwingArcaneFlareStickyFlare
+
+
+### Invisible Friends
+
+New talent (tier 7).
+Blink Heal grants Stealth to Brightwing. If Blink Heal is cast on a Hero, they are also granted Stealth. While Stealthed by Invisible Friends, Heroes heal for 20 Health per second and are Unrevealable for the first 0.5 seconds
+
+Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.
+
+
+### Magic Spit
+
+New talent (tier 2).
+Increase Basic Attack range by 1.1. Basic Attacks against Heroes reduce the cooldown of Soothing Mist by 5 seconds.
+
+
+### Critical Mist
+
+New talent (tier 3).
+If Soothing Mist removes a disabling effect from an ally, heal them for 200.
+
+
+### Intensive Winds
+
+New talent (tier 7).
+Permanently reduce Emerald Wind's cooldown to 5 seconds and increase its Mana cost to 200.
+
+
+### Phase Out
+
+New talent (tier 6).
+Activate to place Brightwing in Stasis for 0.75 seconds.
+
+
+### Faerie Protector
+
+New talent (tier 7).
+Activate to apply Pixie Dust to all nearby Heroes.
+
+
+### Hush!
+
+New talent (tier 6).
+Enemy Heroes hit by the center of Arcane Flare are Silenced for 1 second and deal 25% less damage for 3 seconds.
+
+
+### Safety Dust
+
+New talent (tier 5).
+Increase Pixie Dust's duration by 1 second. Brightwing heals allies with an active Pixie Dust for 25% more.
+
+
+### Pixie Power
+
+New talent (tier 5).
+Reduce the cooldown of Pixie Dust by 3 seconds and increase the Spell Armor granted by 25.
+
+
+### Speedy Dragon
+
+New talent (tier 7).
+Permanently gain 20% Movement Speed.
+
+
+## Kerrigan
+
+### Blade Torrent
+
+Talent removed (tier 3).
+Increases Impaling Blades' radius by 30%.
+
+
+### Clean Kill
+
+Talent removed (tier 2).
+If Ravage kills the target, it restores 75% of its Mana cost and increases the damage of the next Ravage by 25%.
+
+
+### Envenom
+
+Talent removed (tier 2).
+Activate to poison an enemy Hero, dealing 352 damage over 10 seconds.
+
+
+### Siphoning Impact
+
+Changed plaintext_full_tooltip:
+If the targeted enemy dies within 1.5 seconds, Kerrigan heals for 10% of her maximum Health.
+->
+Hitting an enemy Hero with Ravage grants 90 points of Assimilation Shields.
+
+Changed plaintext_short_tooltip:
+Ravage heals Kerrigan
+->
+Ravage grants Assimilation Shields
+
+Changed tree_name:
+KerriganSiphoningImpactRavage
+->
+KerriganRavageSiphoningImpact
+
+Changed face_name:
+KerriganRavageSiphoningImpactTalent
+->
+KerriganRavageSiphoningImpact
+
+
+### Overdrive
+
+Talent removed (tier 6).
+Activate to increase Spell Power by 25% and Mana costs by 40% for 5 seconds.
+
+
+### Assimilation Mastery
+
+Changed tier:
+3
+->
+1
+
+Changed plaintext_full_tooltip:
+Increases the duration of Assimilation by 100%. While Assimilation is active, Kerrigan's Health and Mana regeneration is increased by 100%.
+->
+Regeneration Globe healing grants 40 points of Assimilation Shields per second while active. While Assimilation is active, Kerrigan's Health and Mana regeneration is increased by 100%.
+
+Changed plaintext_short_tooltip:
+Assimilation lasts longer and increases Health and Mana regeneration
+->
+Globes grant Shields, Assimilation increases regen
+
+
+### Aggressive Defense
+
+Talent removed (tier 6).
+Increases base Shield amount gained from Assimilation by 100%.
+
+
+### Double Strike
+
+Talent removed (tier 5).
+When a Basic Ability damages an enemy, Kerrigan's next Basic Attack hits for 75% bonus damage.
+
+
+### Sharpened Blades
+
+Changed tier:
+1
+->
+2
+
+Changed column:
+2
+->
+1
+
+Changed plaintext_full_tooltip:
+Impaling Blades deals 25% more damage.
+->
+Quest: Minions and Heroes that die within 1.5 seconds of being hit by Ravage increase its damage up to a maximum of 50.
+
+Minions grant 0.5 increased damage and Heroes grant 5 increased damage.
+
+Reward: After reaching a 50 damage increase, Ravage gains 50 additional damage.
+
+Changed plaintext_short_tooltip:
+Impaling Blades deals more damage
+->
+Quest: Ravage kills increase damage
+
+Changed icon:
+storm_ui_icon_kerrigan_impalingblades.dds
+->
+storm_ui_icon_kerrigan_ravage.dds
+
+Changed tree_name:
+KerriganSharpenedBladesImpalingBlades
+->
+KerriganRavageSharpenedBlades
+
+Changed face_name:
+KerriganImpalingBladesSharpenedBladesTalent
+->
+KerriganRavageSharpenedBlades
+
+
+### Queen's Rush
+
+Talent removed (tier 5).
+Activate to gain 30% Movement Speed for 4 seconds. Queen's Rush is also applied for free on Takedowns.
+
+
+### Bladed Momentum
+
+Changed plaintext_full_tooltip:
+Basic Attacks reduce Kerrigan's Basic Ability cooldowns by 0.6 seconds.
+->
+Basic Attacks against enemy Heroes reduce the cooldown of Kerrigan's Basic Abilities by 0.6 seconds.
+
+Changed plaintext_short_tooltip:
+Basic Attacks reduce Ability cooldowns
+->
+Attacking Heroes reduces Ability cooldowns
+
+
+### Summon Ultralisk
+
+Changed plaintext_full_tooltip:
+Summon an Ultralisk that attacks the target to deal 100 damage. Attacks splash to nearby enemies for 50% damage. Can reactivate the Ability to retarget the Ultralisk. Lasts for 20 seconds.
+->
+After 0.5 seconds, summon an Ultralisk that rushes forward upon spawning, dealing 250 damage to the first enemy Hero hit and Stunning them for 0.5 seconds.
+
+The Ultralisk's Basic Attacks deal 50% of their damage in an area around their target. Reactivate to retarget the Ultralisk.
+
+Changed plaintext_short_tooltip:
+Summon an Ultralisk to chase a target
+->
+Summon a commandable Ultralisk
+
+
+### Psionic Pulse
+
+Changed column:
+2
+->
+3
+
+Changed plaintext_full_tooltip:
+After casting Primal Grasp, deal 36 damage per second to nearby enemies. Lasts 5 seconds.
+->
+Primal Grasp explodes a second time 2.5 seconds after its first explosion.
+
+Changed plaintext_short_tooltip:
+Damage nearby enemies
+->
+Primal Grasp explodes twice
+
+Changed tree_name:
+KerriganPsionicPulsePrimalGrasp
+->
+KerriganPrimalGraspPsionicPulse
+
+Changed face_name:
+KerriganPrimalGraspPsionicPulseTalent
+->
+KerriganPrimalGraspPsionicPulse
+
+
+### Nexus Blades
+
+Talent removed (tier 7).
+Basic Attacks deal 20% more damage and Slow enemy Movement Speed by 20% for 1 second.
+
+
+### Eviscerate
+
+Talent removed (tier 5).
+Increases Ravage's range by 40%.
+
+
+### Fury of the Swarm
+
+Changed tier:
+2
+->
+1
+
+Changed plaintext_full_tooltip:
+Kerrigan's Basic Attacks splash for 60% damage around the target.
+->
+Gain 10% more Assimilation Shields from Basic Attacks. After casting Ravage, Kerrigan's next 2 Basic Attacks within 3 seconds splash for 100% damage around the target.
+
+Changed plaintext_short_tooltip:
+Basic Attacks cleave
+->
+Basic Attacks grant more Shields, can splash
+
+Changed tree_name:
+KerriganCombatStyleFuryoftheSwarm
+->
+KerriganFuryOfTheSwarm
+
+
+### Essence for Essence
+
+Talent removed (tier 6).
+Activate to deal 10% of target enemy Hero's Max Health and gain Assimilation Shields for twice that amount.
+
+
+### Block
+
+Talent removed (tier 1).
+Every 5 seconds, gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.
+
+Stores up to 2 charges.
+
+
+### Omegastorm
+
+Changed plaintext_full_tooltip:
+Maelstrom size increased by 25% . Amount of Assimilation Shields generated by Maelstrom increased by 100%.
+->
+Maelstrom's duration is increased by 0.125 seconds every time it damages a Hero.
+
+Changed plaintext_short_tooltip:
+Increased Maelstrom size and Shield generation
+->
+Damaging enemies increases Maelstrom duration
+
+
+### Chrysalis
+
+New talent (tier 5).
+Activate to place Kerrigan in a Chrysalis with 550 Health for 5 seconds. While inside, Kerrigan regenerates 5% of her maximum Health per second.
+
+Enemies can destroy the Chrysalis to end its effects early.
+
+
+### Volatile Power
+
+New talent (tier 5).
+Increase the amount of Assimilation Shields granted from damage dealt by 15%, but reduce duration of Assimilation by 3 seconds.
+
+
+### Painful Spikes
+
+New talent (tier 6).
+Enemies hit by Impaling Blades take an additional 75 damage the next 6 times Kerrigan damages them within 5 seconds.
+
+
+### Assimilation Blades
+
+New talent (tier 7).
+Damaging an enemy increases Basic Attack damage by 2% for 5 seconds, up to 40%.
+
+
+### Psionic Barrier
+
+New talent (tier 5).
+Each enemy Hero hit by Primal Grasp grants 15 Spell Armor for 4 seconds.
+
+
+### Boundless Fury
+
+New talent (tier 3).
+Hitting an enemy Hero with Ravage grants a charge of Ravage. Can only occur once every 10 seconds per Hero.
+
+
+### Queen of Blades
+
+New talent (tier 3).
+Damaging a Hero with Primal Grasp reduces Ravage's cooldown by 4 seconds.
+
+
+### Kinetic Fulmination
+
+New talent (tier 2).
+Damaging an enemy increases the damage of Kerrigan's next Impaling Blades within 10 seconds by 15%, up to 150%.
+
+
+### Mounting Potency
+
+New talent (tier 6).
+Ravage grants 5% Spell Power for 4 seconds, up to 40%.
+
+
+### Unbridled Energy
+
+New talent (tier 6).
+Damaging a Hero with a Heroic Ability grants 30% Spell Power for 4 seconds.
+
+
+## LiLi
+
+### Gale Force
+
+Changed plaintext_full_tooltip:
+Increase Blinding Wind's duration by 0.8 second. Li Li's Basic Attacks against Blinded Heroes deal 75% increased damage.
+->
+Increase Blinding Wind's duration by 0.75 seconds. Li Li's Basic Attacks against Blinded Heroes deal 75% increased damage.
+
+
+## Tyrande
+
+### Trueshot Aura
+
+Changed plaintext_full_tooltip:
+Activate to reset the cooldown of Hunter's Mark and grant 15% increased Basic Attack damage to nearby allied Heroes for 5 seconds.
+
+Passive: Basic Attack damage increased by 15%.
+->
+Activate to reset the cooldown of Hunter's Mark and grant 15% increased Basic Attack damage to other nearby allied Heroes for 5 seconds.
+
+Passive: Basic Attack damage increased by 15%.
+
+
+## Valeera
+
+### Crippling Poison
+
+Changed plaintext_short_tooltip:
+Spell Damage slows enemies
+->
+Spell Damage Slows enemies
+

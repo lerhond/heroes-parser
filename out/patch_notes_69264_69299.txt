@@ -1,0 +1,246 @@
+# Patch notes: 69264 -> 69299
+
+
+## Arthas
+
+### Remorseless Winter
+
+Changed plaintext_full_tooltip:
+Enemy Heroes that remain within Frozen Tempest for 3 seconds are rooted for 1.25 seconds. This effect can only happen once every 10 seconds.
+->
+Enemy Heroes that remain within Frozen Tempest for 3 seconds are Rooted for 1.25 seconds. This effect can only happen once every 10 seconds.
+
+Changed plaintext_short_tooltip:
+Frozen Tempest can root enemy Heroes
+->
+Frozen Tempest can Root enemy Heroes
+
+
+### Frozen Wastes
+
+Changed plaintext_full_tooltip:
+Frozen Tempest Mana cost reduced by 4 per second.
+
+Quest: Damage enemy Heroes with Frozen Tempest.
+
+Reward: After damaging enemy Heroes 150 times with Frozen Tempest, the Movement and Attack Speed slows of Frozen Tempest last an extra 1.5 seconds against enemy Heroes.
+->
+Frozen Tempest Mana cost reduced by 4 per second.
+
+Quest: Damage enemy Heroes with Frozen Tempest.
+
+Reward: After damaging enemy Heroes 150 times with Frozen Tempest, the Movement and Attack Speed Slows of Frozen Tempest last an extra 1.5 seconds against enemy Heroes.
+
+Changed plaintext_short_tooltip:
+Quest: Frozen Tempest slow lingers
+->
+Quest: Frozen Tempest Slow lingers
+
+
+### Frost Strike
+
+Changed plaintext_full_tooltip:
+Reduces Frostmourne Hungers' cooldown by 2 seconds. Frostmourne Hungers also slows the enemy by 50% for 1.5 seconds.
+->
+Reduces Frostmourne Hungers' cooldown by 2 seconds. Frostmourne Hungers also Slows the enemy by 50% for 1.5 seconds.
+
+Changed plaintext_short_tooltip:
+Reduces Frostmourne Hungers cooldown and adds slow
+->
+Reduces Frostmourne Hungers cooldown and adds Slow
+
+
+### Absolute Zero
+
+Changed plaintext_full_tooltip:
+Sindragosa flies twice as far.  Enemy Heroes are rooted for 2 seconds, and then slowed by 60% for 3.5 seconds.
+->
+Sindragosa flies twice as far.  Enemy Heroes are Rooted for 2 seconds, and then Slowed by 60% for 3.5 seconds.
+
+
+### Summon Sindragosa
+
+Changed plaintext_full_tooltip:
+Deals 230 damage and slows enemies by 60% for 4 seconds.  Also disables non-Heroic enemies and Structures for 20 seconds.
+->
+Deals 230 damage and Slows enemies by 60% for 4 seconds.  Also disables non-Heroic enemies and Structures for 20 seconds.
+
+
+### Embrace Death
+
+Changed plaintext_full_tooltip:
+Death Coil deals more damage and heals more the lower Arthas's current health is, to a maximum of 100% bonus damage and healing.
+->
+Death Coil deals more damage and heals more the lower Arthas's current Health is, to a maximum of 100% bonus damage and healing.
+
+
+### Frost Presence
+
+Changed plaintext_full_tooltip:
+Quest: Root enemy Heroes with Howling Blast.
+
+Reward: After rooting 5 Heroes, Howling Blast's cooldown is reduced by 2 seconds.
+
+Reward: After rooting 10 Heroes, Howling Blast's range is increased by 30%.
+
+Reward: After rooting 20 Heroes, Howling Blast also roots enemies in its path.
+->
+Quest: Root enemy Heroes with Howling Blast.
+
+Reward: After Rooting 5 Heroes, Howling Blast's cooldown is reduced by 2 seconds.
+
+Reward: After Rooting 10 Heroes, Howling Blast's range is increased by 30%.
+
+Reward: After Rooting 20 Heroes, Howling Blast also Roots enemies in its path.
+
+
+## Azmodan
+
+### Demonic Invasion
+
+Changed plaintext_full_tooltip:
+Rain a small army of Demonic Grunts down on enemies, dealing 65 damage per impact. Grunts deal 42 damage, have 750 health and last up to 10 seconds. When Grunts die they explode, dealing 98 damage to nearby enemies.
+->
+Rain a small army of Demonic Grunts down on enemies, dealing 65 damage per impact. Grunts deal 42 damage, have 750 Health and last up to 10 seconds. When Grunts die they explode, dealing 98 damage to nearby enemies.
+
+
+## Dehaka
+
+### Paralyzing Enzymes
+
+Changed plaintext_full_tooltip:
+Drag slows enemies by 50% for 2 seconds after it ends.
+->
+Drag Slows enemies by 50% for 2 seconds after it ends.
+
+Changed plaintext_short_tooltip:
+Drag slows
+->
+Drag Slows
+
+
+## Guldan
+
+### Darkness Within
+
+Changed plaintext_full_tooltip:
+After using Life Tap, the next Ability Gul'dan casts has 25% increased Spell Power.
+->
+After using Life Tap, the damage and healing of Gul'dan's next Ability is increased by 25%.
+
+Changed plaintext_short_tooltip:
+Life Tap to gain Spell Power
+->
+Life Tap to gain Damage
+
+
+## Jaina
+
+### Ice Lance
+
+Changed column:
+2
+->
+1
+
+
+### Ice Floes
+
+Changed column:
+1
+->
+2
+
+
+## Monk
+
+### Spirit Ally
+
+Changed plaintext_full_tooltip:
+Place a Spirit Ally that heals allies in a large area around it for 2% of their maximum Health every second. Has 150 Health and lasts 10 seconds. Kharazim can Radiant Dash to Spirit Allies.
+->
+Place a Spirit Ally that heals allied Heroes in a large area around it for 2% of their maximum Health every second. Has 150 Health and lasts 10 seconds. Kharazim can Radiant Dash to Spirit Allies.
+
+
+## Raynor
+
+### Ace In The Hole
+
+Changed icon:
+storm_ui_icon_talent_autoattack_damage.dds
+->
+storm_ui_icon_raynor_acardtoplay.dds
+
+
+## Rehgar
+
+### Healing Totem
+
+Changed plaintext_full_tooltip:
+Activate to place a Totem that heals allies in an area for 2% of their maximum Health every second for 10 seconds.
+->
+Activate to place a Totem that heals allied Heroes in an area for 2% of their maximum Health every second for 10 seconds.
+
+
+### Earth Shield
+
+Changed plaintext_full_tooltip:
+Lightning Shield gives a Shield that absorbs damage equal to 12% of their maximum Health for 3 seconds.
+->
+Lightning Shield gives Heroes a Shield that absorbs damage equal to 12% of their maximum Health for 3 seconds.
+
+
+## Tinker
+
+### Engine Gunk
+
+Changed plaintext_full_tooltip:
+Rock-It! Turret attacks slow enemies by 20% for 2 seconds.
+->
+Rock-It! Turret attacks Slow enemies by 20% for 2 seconds.
+
+Changed plaintext_short_tooltip:
+Rock-it! Turrets slow enemies
+->
+Rock-it! Turrets Slow enemies
+
+
+## Tychus
+
+### Lead Rain
+
+Changed plaintext_full_tooltip:
+Overkill also slows enemy movement speed by 30%.
+->
+Overkill also Slows enemy Movement Speed by 30%.
+
+Changed plaintext_short_tooltip:
+Overkill slows targets
+->
+Overkill Slows targets
+
+
+## Uther
+
+### Blessed Champion
+
+Changed plaintext_full_tooltip:
+For the next 5 seconds after using Holy Light, Uther's Basic Attacks heal him and nearby allies for 15% of the total amount healed by Holy Light.
+->
+For the next 5 seconds after using Holy Light, Uther's Basic Attacks heal him and nearby allied Heroes for 15% of the total amount healed by Holy Light.
+
+
+## Wizard
+
+### Tal Rasha's Elements
+
+Changed plaintext_full_tooltip:
+Using Abilities grants 5% Spell Power, to a maximum of 20%.  This bonus is reset when the same Ability is used within a chain.
+->
+Casting Abilities increases the damage of the next Ability by 5%, up to 20%.  This bonus is reset when the same Ability is used within a chain.
+
+Changed plaintext_short_tooltip:
+Cycle abilities to gain Spell Power
+->
+Cycle Abilities to gain damage
+

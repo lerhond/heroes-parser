@@ -1,0 +1,306 @@
+# Patch notes: 67985 -> 68509
+
+
+## Chromie
+
+### Deep Breathing
+
+Changed plaintext_full_tooltip:
+Quest: Every time Dragon's Breath hits a Hero increase its damage by 3, up to 60.
+
+Reward: After hitting 20 Heroes, increase its damage by an additional 140 and also increase Chromie's sight radius by 100%.
+->
+Quest: Every time Dragon's Breath hits a Hero increase its damage by 5, up to 60.
+
+Reward: After hitting 12 Heroes, increase its damage by an additional 140 and also increase Chromie's sight radius by 100%.
+
+
+### Mounting Sand
+
+Changed plaintext_full_tooltip:
+Increase the damage of Echo's Sand Blast by 40%. Hitting 3 or more consecutive Sand Blasts without missing counts as hitting 3 Heroes.
+->
+Increase the damage of Echo's Sand Blast by 50%. Hitting 3 or more consecutive Sand Blasts without missing counts as hitting 3 Heroes.
+
+
+### Mobius Loop
+
+Changed plaintext_full_tooltip:
+If Dragon's Breath hits a Hero, reduce its cooldown by 2 seconds and restore 50 Mana.
+->
+If Dragon's Breath hits a Hero, reduce its cooldown by 3 seconds and restore 100 Mana.
+
+
+## Deckard
+
+### Potion of Shielding
+
+Changed plaintext_full_tooltip:
+Whenever an ally is healed by a Healing Potion, they gain a 135 Shield for 6 seconds.
+->
+Whenever an ally is healed by a Healing Potion, they gain a 122 Shield for 6 seconds.
+
+
+## Firebat
+
+### Endurance Stimpack
+
+Changed plaintext_full_tooltip:
+Activate to gain a Shield that absorbs 450 damage over 5 seconds.
+->
+Activate to gain a Shield that absorbs 480 damage over 5 seconds.
+
+
+### Bunker Drop
+
+Changed plaintext_full_tooltip:
+After 0.5 seconds, deploy and enter a Bunker with 1435 Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 179 damage to enemies in a line. 
+
+Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.
+->
+After 0.5 seconds, deploy and enter a Bunker with 1435 Health. Blaze and his allies can enter and exit the Bunker at will. While in the Bunker, occupants gain access to Flamethrower, dealing 170 damage to enemies in a line. 
+
+Exiting the Bunker grants 25 Armor for 2 seconds. Bunkers last 10 seconds, or until destroyed.
+
+
+### New Habits
+
+Changed plaintext_full_tooltip:
+Collecting Regeneration Globes reduces the cooldown of Pyromania by 5 seconds.
+
+Quest: Collect 15 Regeneration Globes.
+
+Reward: Pyromania grants Unstoppable for 2 seconds.
+->
+Collecting Regeneration Globes reduces the cooldown of Pyromania by 8 seconds.
+
+Quest: Collect 15 Regeneration Globes.
+
+Reward: Pyromania grants Unstoppable for 2 seconds.
+
+
+### Neural Stimpack
+
+Changed plaintext_full_tooltip:
+Activate to gain 50 Mana and cause Basic Ability cooldowns to recharge 100% faster for 5 seconds.
+->
+Activate to gain 30 Mana and cause Basic Ability cooldowns to recharge 100% faster for 5 seconds.
+
+
+### Thermal Protection
+
+Changed plaintext_full_tooltip:
+Each enemy hit by Jet Propulsion grants 10 Armor for 3 seconds and reduces its cooldown by 2 seconds.
+->
+Each enemy hit by Jet Propulsion grants 10 Armor for 3 seconds and reduces its cooldown by 1.5 seconds.
+
+
+### Nanomachine Coating
+
+Changed plaintext_full_tooltip:
+Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 40% for 2.5 seconds.
+->
+Enemies standing in Oil Spills and Ignited Oil Spills have their Attack Speed reduced by 50% for 2.5 seconds.
+
+
+### Combustion
+
+Changed plaintext_full_tooltip:
+Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 52 damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds.
+
+Blaze's Movement Speed is reduced by 50% while Channeling.
+->
+Channel for up to 2.6 seconds. Upon ending, Slow nearby enemies by 60% and deal 55 damage to them every 0.5 seconds. Combustion's Slow and damage over time duration is extended the longer Blaze Channels, from 1 second up to 5 seconds.
+
+Blaze's Movement Speed is reduced by 40% while Channeling.
+
+
+## Mephisto
+
+### Unyielding Power
+
+Changed plaintext_full_tooltip:
+Quest: Hit Heroes with Skull Missile.
+
+Reward: After hitting 20 Heroes, increase Skull Missile's damage by 60.
+
+Reward: After hitting 40 Heroes, Skull Missile's cooldown is permanently reduced to 5 seconds.
+->
+Quest: Hit Heroes with Skull Missile.
+
+Reward: After hitting 20 Heroes, increase Skull Missile's damage by 100.
+
+Reward: After hitting 40 Heroes, Skull Missile's cooldown is permanently reduced to 5 seconds.
+
+
+### Static Barrier
+
+Changed plaintext_full_tooltip:
+At the end of its duration, Lightning Nova grants Mephisto a Shield equal to 50% of the damage it dealt to Heroes. Lasts 7 seconds.
+->
+At the end of its duration, Lightning Nova grants Mephisto a Shield equal to 40% of the damage it dealt to Heroes. Lasts 7 seconds.
+
+
+### Lightning Reaction
+
+Changed plaintext_full_tooltip:
+Skull Missile explodes on contact with Lightning Nova, dealing 144 damage to nearby enemies.
+->
+Skull Missile explodes on contact with Lightning Nova, dealing 138 damage to nearby enemies.
+
+
+### Static Field
+
+Changed plaintext_full_tooltip:
+When Lightning Nova's damage bonus reaches 40%, enemy Heroes within its radius take damage equal to 12% of their maximum Health.
+->
+When Lightning Nova's damage bonus reaches 30%, enemy Heroes within its radius take damage equal to 10% of their maximum Health.
+
+
+### Anger
+
+Changed plaintext_full_tooltip:
+Basic Attacks against enemy Heroes also activate Lord of Hatred, reducing Basic Ability cooldowns by 0.75 seconds.
+->
+Basic Attacks against enemy Heroes also activate Lord of Hatred, reducing Basic Ability cooldowns by 1 second.
+
+
+### Durance of Hate
+
+Changed plaintext_full_tooltip:
+After 1 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2 seconds and deal 160 damage to them over the same duration.
+
+Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.
+->
+After 1 second, unleash a wave of evil spirits that Root the first enemy Hero hit for 2.5 seconds and deal 250 damage to them over the same duration.
+
+Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.
+
+
+### Consume Souls
+
+Changed plaintext_full_tooltip:
+Channel for 2.5 seconds, revealing all enemy Heroes. After the Channel completes, all enemy Heroes take 357 damage and are Slowed by 40% for 2.5 seconds.
+->
+Channel for 2.5 seconds, revealing all enemy Heroes. After the Channel completes, all enemy Heroes take 357 damage and are Slowed by 25% for 2.5 seconds.
+
+
+## Nova
+
+### Advanced Cloaking
+
+Changed plaintext_full_tooltip:
+After being Stealthed for 2 seconds, gain an additional 5% Movement Speed. While Stealthed, regenerate 2 Mana per second.
+->
+After being Stealthed for 2 seconds, gain an additional 10% Movement Speed. While Stealthed, regenerate 2 Mana per second.
+
+
+### Perfect Shot
+
+Changed plaintext_full_tooltip:
+Hitting an enemy Hero with Snipe reduces the cooldown by 3 seconds and grants an additional stack of Snipe.
+->
+Hitting an enemy Hero with Snipe reduces the cooldown by 4 seconds and grants an additional stack of Snipe.
+
+
+### Explosive Round
+
+Changed plaintext_full_tooltip:
+Snipe also deals 70% damage to enemies near the impact.
+->
+Snipe also deals 80% damage to enemies near the impact.
+
+
+## SgtHammer
+
+### Siege Tactics
+
+Changed plaintext_full_tooltip:
+Using Neosteel Plating while in Siege Mode grants Unstoppable for 2 seconds.
+->
+Using Neosteel Plating while in Siege Mode grants Unstoppable for 2 seconds, as long as she remains in Siege Mode.
+
+
+## Tyrande
+
+### Quickening Blessing
+
+Changed plaintext_full_tooltip:
+Gain 10% Movement Speed. Light of Elune increases the target's Movement Speed by 20% for 3 seconds.
+->
+Gain 10% Movement Speed. Light of Elune increases the target's Movement Speed by 15% for 3 seconds.
+
+
+### Shadowstalk
+
+Changed plaintext_full_tooltip:
+Grant all allied Heroes Stealth for 10 seconds and heal them for 400 Health over 10 seconds. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.
+->
+Grant all allied Heroes Stealth for 10 seconds and heal them for 380 Health over 10 seconds. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.
+
+
+### Darnassian Archery
+
+Changed plaintext_full_tooltip:
+Basic Attacks against enemy Heroes grant a stacking 10% increased Attack Damage bonus for 8 seconds. This bonus is lost when Basic Attacking non-Heroes.
+->
+Basic Attacks against enemy Heroes grant a stacking 10% increased Attack Damage bonus for 6 seconds. This bonus is lost when Basic Attacking non-Heroes.
+
+
+### Lunar Blaze
+
+Changed plaintext_full_tooltip:
+Increase Lunar Flare's range by 50%.
+
+Quest: Hitting a Hero with Lunar Flare increases its damage by 5%, up to 100%.
+->
+Increase Lunar Flare's range by 40%.
+
+Quest: Hitting a Hero with Lunar Flare increases its damage by 5%, up to 100%.
+
+
+### Moonlit Arrows
+
+Changed plaintext_full_tooltip:
+Basic Attacks decrease the cooldown of Light of Elune by an additional 0.25 seconds.
+->
+Basic Attacks decrease the cooldown of Light of Elune by an additional 0.75 seconds.
+
+
+### Elune's Chosen
+
+Changed plaintext_full_tooltip:
+Activate to make Tyrande's Basic Attacks heal the target ally for 200% of the damage dealt. Lasts for 10 seconds.
+->
+Activate to make Tyrande's Basic Attacks heal the target ally for 200% of the damage dealt. Lasts for 8 seconds.
+
+
+### Trueshot Aura
+
+Changed plaintext_full_tooltip:
+Activate to reset the cooldown of Hunter's Mark and grant 20% increased Basic Attack damage to nearby allied Heroes for 5 seconds.
+
+Passive: Basic Attack damage increased by 20%.
+->
+Activate to reset the cooldown of Hunter's Mark and grant 15% increased Basic Attack damage to nearby allied Heroes for 5 seconds.
+
+Passive: Basic Attack damage increased by 15%.
+
+
+## Whitemane
+
+### Indulgence
+
+Changed plaintext_full_tooltip:
+Searing Lash's first strike restores 10 Mana per Hero hit, and its second strike restores 25 Mana per Hero hit.
+->
+Searing Lash's first strike restores 20 Mana per Hero hit, and its second strike restores 40 Mana per Hero hit.
+
+
+### Righteous Flame
+
+Changed plaintext_full_tooltip:
+Searing Lash deals 50% more damage to enemies who are Stunned, Rooted, Silenced or Slowed.
+->
+Searing Lash deals 75% more damage to enemies who are Stunned, Rooted, Silenced or Slowed.
+

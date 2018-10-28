@@ -1,0 +1,279 @@
+# Patch notes: 68778 -> 69264
+
+
+## Amazon
+
+### Surge of Light
+
+Changed plaintext_full_tooltip:
+After taking 500 damage with Avoidance active, Cassia can activate Avoidance to deal 225 damage to enemies around her.
+->
+After taking 500 damage with Avoidance active, Cassia can activate Avoidance to deal 210 damage to enemies around her.
+
+
+## Azmodan
+
+### Master of Destruction
+
+Changed plaintext_full_tooltip:
+All Shall Burn's final damage applies to all enemies in an area around the target and grants 2 Annihilation per Hero hit.
+->
+All Shall Burn's final damage applies to all enemies in an area around the target and grants 3 Annihilation per Hero hit.
+
+
+## Diablo
+
+### Diabolical Momentum
+
+Changed plaintext_full_tooltip:
+When Diablo's Basic Attacks damage enemies, reduce the cooldown of his Basic Abilities by 0.75 second.
+->
+When Diablo's Basic Attacks damage enemies, reduce the cooldown of his Basic Abilities by 1 second.
+
+
+## FaerieDragon
+
+### Critical Mist
+
+Changed plaintext_full_tooltip:
+If Soothing Mist removes a disabling effect from an ally, heal them for 200.
+->
+If Soothing Mist removes a disabling effect from an ally, heal them for 250.
+
+
+## Kerrigan
+
+### Fury of the Swarm
+
+Changed plaintext_full_tooltip:
+Gain 10% more Assimilation Shields from Basic Attacks. After casting Ravage, Kerrigan's next 2 Basic Attacks within 3 seconds splash for 100% damage around the target.
+->
+Gain 10% more Assimilation Shields from Basic Attacks. After casting Ravage, Kerrigan's next Basic Attack within 3 seconds splashes for 100% damage around the target.
+
+
+### Painful Spikes
+
+Changed plaintext_full_tooltip:
+Enemies hit by Impaling Blades take an additional 75 damage the next 6 times Kerrigan damages them within 5 seconds.
+->
+Enemies hit by Impaling Blades take an additional 70 damage the next 6 times Kerrigan damages them within 5 seconds.
+
+
+### Queen of Blades
+
+Changed plaintext_full_tooltip:
+Damaging a Hero with Primal Grasp reduces Ravage's cooldown by 4 seconds.
+->
+Damaging a Hero with Primal Grasp reduces Ravage's cooldown by 6 seconds.
+
+
+### Volatile Power
+
+Changed plaintext_full_tooltip:
+Increase the amount of Assimilation Shields granted from damage dealt by 15%, but reduce duration of Assimilation by 3 seconds.
+->
+Increase the amount of Assimilation Shields granted from damage dealt by 10%, but reduce duration of Assimilation by 3 seconds.
+
+
+### Omegastorm
+
+Changed plaintext_full_tooltip:
+Maelstrom's duration is increased by 0.125 seconds every time it damages a Hero.
+->
+Maelstrom's duration is increased by 0.1875 seconds every time it damages a Hero.
+
+
+### Kinetic Fulmination
+
+Changed plaintext_full_tooltip:
+Damaging an enemy increases the damage of Kerrigan's next Impaling Blades within 10 seconds by 15%, up to 150%.
+->
+Damaging an enemy increases the damage of Kerrigan's next Impaling Blades within 10 seconds by 10%, up to 100%.
+
+
+## LiLi
+
+### Jug of 1,000 Cups
+
+Changed plaintext_full_tooltip:
+Channel for up to 6 seconds. Every 0.25 seconds, heal the lowest Health nearby allied Hero for 70 Health and increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50.
+->
+Channel for up to 6 seconds. Every 0.25 seconds, heal the lowest Health nearby allied Hero for 66 Health and increase the cooldown of Jug of 1,000 Cups by 2 seconds, up to 50.
+
+
+## Medic
+
+### Physical Therapy
+
+Changed plaintext_full_tooltip:
+Safeguard removes all Slows from its target. When a Slow is removed this way, reduce the cooldown of Safeguard by 4 seconds.
+->
+Safeguard removes all Slows from its target. When a Slow is removed this way, reduce the cooldown of Safeguard by 5 seconds.
+
+
+### Vanadium Plating
+
+Changed plaintext_full_tooltip:
+While an ally affected by Safeguard is Stunned, Safeguard grants an additional 25 Armor and its duration is paused.
+->
+While an ally affected by Safeguard is Rooted or Stunned, Safeguard grants an additional 25 Armor and its duration is paused.
+
+Changed plaintext_short_tooltip:
+Stuns increase Safeguard Armor, duration
+->
+Roots, Stuns increase Safeguard Armor, duration
+
+
+### EMP Grenade
+
+Changed plaintext_full_tooltip:
+Displacement Grenade deals an additional 80 damage over 2 seconds, and up to 400 bonus damage to Shields.
+->
+Displacement Grenade deals an additional 96 damage over 2 seconds, and up to 400 bonus damage to Shields.
+
+
+## Medivh
+
+### Mage Armor
+
+Changed plaintext_full_tooltip:
+The first time an ally uses a Portal, they gain 25 Armor for 4 seconds, reducing their damage taken by 25%.
+->
+The first time an ally uses a Portal, they gain 30 Armor for 4 seconds, reducing their damage taken by 30%.
+
+
+### Force of Magic
+
+Changed plaintext_full_tooltip:
+Preventing at least 268 damage with a single cast of Force of Will grants 25%  Spell Power for 15 seconds. Stacks up to 2 times.
+->
+Preventing at least 268 damage with a single cast of Force of Will grants 30%  Spell Power for 15 seconds. Stacks up to 2 times.
+
+
+### Enduring Will
+
+Changed plaintext_full_tooltip:
+Preventing at least 268 damage with Force of Will reduces its cooldown to 3 seconds.
+->
+Preventing at least 268 damage with Force of Will reduces its cooldown to 4 seconds.
+
+
+## Mephisto
+
+### Malicious Intent
+
+Changed plaintext_full_tooltip:
+Shade of Mephisto grants 20% Spell Power while active and for 2.5 seconds after ending.
+->
+Shade of Mephisto grants 15% Spell Power while active and for 2.5 seconds after ending.
+
+
+### Hateful Mending
+
+Changed plaintext_full_tooltip:
+Skull Missile heals Mephisto for 50% of the damage it deals to Heroes.
+->
+Skull Missile heals Mephisto for 60% of the damage it deals to Heroes.
+
+
+### Static Barrier
+
+Changed plaintext_full_tooltip:
+At the end of its duration, Lightning Nova grants Mephisto a Shield equal to 40% of the damage it dealt to Heroes. Lasts 7 seconds.
+->
+At the end of its duration, Lightning Nova grants Mephisto a Shield equal to 40% of the damage it dealt to Heroes. Lasts 5 seconds.
+
+
+### Spite
+
+Changed plaintext_full_tooltip:
+Increase Regeneration Globe healing duration by 60%. Every tick of Regeneration Globe healing activates Lord of Hatred, reducing Basic Ability cooldowns by 0.5 seconds.
+->
+Increase Regeneration Globe healing duration by 100%. Every tick of Regeneration Globe healing activates Lord of Hatred, reducing Basic Ability cooldowns by 0.5 seconds.
+
+
+## Rexxar
+
+### Crippling Talons
+
+Changed plaintext_full_tooltip:
+Increases Spirit Swoop's slow amount to 50% and its duration to 3 seconds.
+->
+Increases Spirit Swoop's slow amount to 50% and its duration to 3.5 seconds.
+
+
+### Grizzled Fortitude
+
+Changed plaintext_full_tooltip:
+Every 7 seconds, Rexxar and Misha gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.
+
+Stores up to 2 charges. Both Rexxar and Misha have their own charges.
+->
+Every 6 seconds, Rexxar and Misha gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.
+
+Stores up to 2 charges. Both Rexxar and Misha have their own charges.
+
+
+## Stukov
+
+### It Hungers
+
+Changed plaintext_full_tooltip:
+Increase the range of Lurking Arm by 20%. If Lurking Arm damages enemy Heroes 15 times, its cooldown is reset and its Mana cost is refunded.
+->
+Increase the range of Lurking Arm by 20%. If Lurking Arm damages enemy Heroes 12 times, its cooldown is reset and its Mana cost is refunded.
+
+
+## Tyrande
+
+### Lunar Blaze
+
+Changed plaintext_full_tooltip:
+Increase Lunar Flare's range by 40%.
+
+Quest: Hitting a Hero with Lunar Flare increases its damage by 5%, up to 100%.
+->
+Increase Lunar Flare's range by 30%.
+
+Quest: Hitting a Hero with Lunar Flare increases its damage by 5%, up to 100%.
+
+
+### Quickening Blessing
+
+Changed plaintext_full_tooltip:
+Gain 10% Movement Speed. Light of Elune increases the target's Movement Speed by 15% for 3 seconds.
+->
+Gain 5% Movement Speed. Light of Elune increases the target's Movement Speed by 15% for 3 seconds.
+
+
+### Kaldorei Resistance
+
+Changed plaintext_full_tooltip:
+Light of Elune grants the target 15 Spell Armor for 3 seconds. This effect stacks up to 2 times.
+->
+Light of Elune grants the target 10 Spell Armor for 3 seconds. This effect stacks up to 2 times.
+
+
+## Whitemane
+
+### Clemency
+
+Changed plaintext_full_tooltip:
+Activate to cast Inquisition on an allied Hero, healing them for up to 371 over 3 seconds while Channeling.
+
+Passive: Reduce Inquisition's cooldown by 4 seconds.
+->
+Activate to cast Inquisition on an allied Hero, healing them for up to 350 over 3 seconds while Channeling.
+
+Passive: Reduce Inquisition's cooldown by 4 seconds.
+
+
+## Yrel
+
+### Aegis of Light
+
+Changed plaintext_full_tooltip:
+Upon landing, Avenging Wrath grants other nearby allied Heroes 35 Armor for 5 seconds.
+->
+Upon landing, Avenging Wrath grants other nearby allied Heroes 25 Armor for 4 seconds.
+
